@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Энергоаудит</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.structure.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <script>
+      $( function() {
+        var icons = {
+          header: "iconClosed",
+          activeHeader: "iconOpen"
+        };
+        $( "#accordion" ).accordion({
+          icons: icons
+        });
+      } );
+    </script>
+  </head>
+  <body>
+    <div class="header-main-wrap">
+      <header>
+        <a href="http://1platforma.com.ua/" class="logo"><img src="images/logo.png" alt="logo"></a>
+        <nav>
+          <ul>
+            <li><a href="#">Методология</a></li>
+            <li><a href="#">Этапы</a></li>
+            <li><a href="#">Цены</a></li>
+          </ul>
+        </nav>
+        <div class="contacts">
+          <a href="tel:+380672178727" class="tel"><i class="icon tel"></i> (067)217-87-27</a>
+          <a href="mailto:e.guz@tstn.com.ua" class="email"><i class="icon email"></i> e.guz@tstn.com.ua</a>
+        </div>
+      </header>
+      <main>
+        <h1>Энергоаудит</h1>
+        <h3>Экономьте на отоплении и расходуйте энергию эффективно!</h3>
+        <div class="main__consult">
+          <form>
+            <h4>Бесплатная консультация прямо сейчас!</h4>
+            <input type="text" name="tel" value="+38 (____) ____________" />
+            <input type="submit" value="ПОЛУЧИТЬ"/>
+          </form>
+        </div>
+      </main>
+    </div>
+    <div class="advantages">
+      <div class="advantages__wrap">
+        <div class="advantage">
+          <div class="img-wrap">
+            <img src="images/light-bulb.svg" alt="">
+          </div>
+          <h4>Точность результатов</h4>
+          <div class="line"></div>
+          <p> Специалисты точно определят, где идут потери тепла</p>
+        </div>
+        <div class="advantage">
+          <div class="img-wrap">
+            <img src="images/rich.svg" alt="">
+          </div>
+          <h4>Экономия затрат</h4>
+          <div class="line"></div>
+          <p>Энергоаудит покажет, сколько вы сможете сэкономить, проведя ту или иную модернизацию.</p>
+        </div>
+        <div class="advantage">
+          <div class="img-wrap">
+            <img src="images/exam.svg" alt="">
+          </div>
+          <h4>Профессионализм</h4>
+          <div class="line"></div>
+          <p>Высококвалифицированные специалисты сделают всё в удобное для вас время.</p>
+        </div>
+        <div class="advantage">
+          <div class="img-wrap">
+            <img src="images/engineer.svg" alt="">
+          </div>
+          <h4>Внедрение рекомендаций</h4>
+          <div class="line"></div>
+          <p>Наши специалисты подберут необходимые материалы и профессиональную бригаду или мастера.</p>
+        </div>
+      </div>
+    </div>
+    <section class="what">
+      <div class="what__wrap">
+        <div class="img-wrap">
+          <img src="images/img.png" alt="">
+        </div>
+        <h2>Что такое энергоаудит</h2>
+
+        <div id="accordion">
+          <h3>Section 1</h3>
+          <div>
+            <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+          </div>
+          <h3>Section 2</h3>
+          <div>
+            <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+          </div>
+          <h3>Section 3</h3>
+          <div>
+            <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+            <ul>
+              <li>List item one</li>
+              <li>List item two</li>
+              <li>List item three</li>
+            </ul>
+          </div>
+          <h3>Section 4</h3>
+          <div>
+            <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+          </div>
+        </div>
+
+        <!--<div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                        Пункт Группы Свертывания #1
+                      </a>
+                    </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                        Пункт Группы Свертывания #2
+                      </a>
+                    </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                        Пункт Группы Свертывания #3
+                      </a>
+                    </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>-->
+      </div>
+    </section>
+    <section class="how">
+      <div class="how__wrap">
+        <h2></h2>
+        <div class="how__item">
+          <div class="how__item__marker">
+            <img src="" alt="">
+          </div>
+          <h4></h4>
+          <p></p>
+        </div>
+        <div class="how__item">
+          <div class="how__item__marker">
+            <img src="" alt="">
+          </div>
+          <h4></h4>
+          <p></p>
+        </div>
+        <div class="how__item">
+          <div class="how__item__marker">
+            <img src="" alt="">
+          </div>
+          <h4></h4>
+          <p></p>
+        </div>
+        <div class="how__item">
+          <div class="how__item__marker">
+            <img src="" alt="">
+          </div>
+          <h4></h4>
+          <p></p>
+        </div>
+      </div>
+    </section>
+    <section class="stages">
+      <div class="stages__wrap">
+        <div class="stages__item">
+          <div class="stages__item__outer">
+            <div class="stages__item__marker">
+            </div>
+            <h4></h4>
+          </div>
+          <p class="stages__item__inner"></p>
+        </div>
+        <div class="stages__item">
+          <div class="stages__item__outer">
+            <div class="stages__item__marker">
+            </div>
+            <h4></h4>
+          </div>
+          <p class="stages__item__inner"></p>
+        </div>
+        <div class="stages__item">
+          <div class="stages__item__outer">
+            <div class="stages__item__marker">
+            </div>
+            <h4></h4>
+          </div>
+          <p class="stages__item__inner"></p>
+        </div>
+      </div>
+    </section>
+    <section class="recommendations">
+      <div class="recommendations__wrap">
+        <h2></h2>
+        <div class="recommendation">
+          <img src="" alt="">
+          <h4></h4>
+          <p></p>
+        </div>
+        <div class="recommendation">
+          <img src="" alt="">
+          <h4></h4>
+          <p></p>
+        </div>
+      </div>
+    </section>
+    <section class="questions">
+      <div class="questions__wrap">
+        <h2></h2>
+        <form>
+          <input type="text"/>
+          <input type="text"/>
+          <input type="text"/>
+          <input type="text"/>
+          <textarea rows="" cols=""></textarea>
+          <input type="submit" name="" value="Отправить">
+        </form>
+      </div>
+    </section>
+    <section class="recalls">
+      <div class="recalls__wrap">
+        <h2></h2>
+        <div class="recalls__container carousel">
+          
+        </div>
+      </div>
+    </section>
+    <section class="prices">
+      <div class="prices__wrap">
+        <h2></h2>
+        <p></p>
+        <div class="prices__item appartments">
+          <div class="prices__marker"></div>
+          <h4></h4>
+          <div class="square-scale">
+            <div class="square-scale__point">
+              <div class="square-scale__point__diamond"></div>
+              <div class="square-scale__point__label"></div>
+            </div>
+            <div class="square-scale__point">
+              <div class="square-scale__point__diamond"></div>
+              <div class="square-scale__point__label"></div>
+            </div>
+            <div class="square-scale__point">
+              <div class="square-scale__point__diamond"></div>
+              <div class="square-scale__point__label"></div>
+            </div>
+            <div class="square-scale__point">
+              <div class="square-scale__point__diamond"></div>
+              <div class="square-scale__point__label"></div>
+            </div>
+          </div>
+          <div class="price">
+            <span class="price__num"></span><span class="price__currency"></span>
+          </div>
+        </div>
+        <div class="prices__item house">
+          <div class="prices__marker"></div>
+          <h4></h4>
+          <div class="square-scale">
+            <div class="square-scale__point">
+              <div class="square-scale__point__diamond"></div>
+              <div class="square-scale__point__label"></div>
+            </div>
+            <div class="square-scale__point">
+              <div class="square-scale__point__diamond"></div>
+              <div class="square-scale__point__label"></div>
+            </div>
+            <div class="square-scale__point">
+              <div class="square-scale__point__diamond"></div>
+              <div class="square-scale__point__label"></div>
+            </div>
+            <div class="square-scale__point">
+              <div class="square-scale__point__diamond"></div>
+              <div class="square-scale__point__label"></div>
+            </div>
+          </div>
+          <div class="square-scale">
+            <div class="square-scale__point">
+              <div class="square-scale__point__diamond"></div>
+              <div class="square-scale__point__label"></div>
+            </div>
+            <div class="square-scale__point">
+              <div class="square-scale__point__diamond"></div>
+              <div class="square-scale__point__label"></div>
+            </div>
+            <div class="square-scale__point">
+              <div class="square-scale__point__diamond"></div>
+              <div class="square-scale__point__label"></div>
+            </div>
+            <div class="square-scale__point">
+              <div class="square-scale__point__diamond"></div>
+              <div class="square-scale__point__label"></div>
+            </div>
+          </div>
+          <div class="price">
+            <span class="price__num"></span><span class="price__currency"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="consult">
+      <div class="consult__wrap">
+        <div class="consult__description">
+          <h2></h2>
+          <p></p>
+        </div>
+        <div class="consult__form__container">
+          <form>
+            <input type="text" name="" value=""/>
+            <input type="submit" name="" value=""/>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer__wrap">
+        <div class="footer__logo">
+          <img src="" alt=""/>
+        </div>
+        <div class="footer__contacts">
+          <div class="tel">
+          </div>
+          <div class="email">
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

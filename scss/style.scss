@@ -1,0 +1,345 @@
+@import 'compass';
+@import 'susy';
+
+// Varibles
+$headings-font: 'Gotham Pro', sans-serif;
+$regular-font: 'Proxima Nova', sans-serif;
+
+$orange: #f8c957;
+$orange2: #ffc016;
+$orange3: #f3c12f;
+$grey1: #8b8b8b;
+$frame: #2b2f40;
+
+$desktop-min-width: 1100px;
+
+// Mixins
+
+// Fonts
+@include font-face(
+  'Gotham Pro',
+  $font-files: (
+    url("../fonts/GothamProBold.woff2") format('woff2'),
+    url("../fonts/GothamProBold.woff") format('woff')
+  ), $weight: 700,
+  $style: normal
+);
+@include font-face(
+  'Gotham Pro',
+  $font-files: (
+    url("../fonts/GothamProMedium.woff2") format('woff2'),
+    url("../fonts/GothamProMedium.woff") format('woff')
+  ), $weight: 400,
+  $style: normal
+);
+@include font-face(
+  'Proxima Nova',
+  $font-files: (
+    url("../fonts/ProximaNova-Bold.woff2") format('woff2'),
+    url("../fonts/ProximaNova-Bold.woff") format('woff')
+  ), $weight: 700,
+  $style: normal
+);
+@include font-face(
+  'Proxima Nova',
+  $font-files: (
+    url("../fonts/ProximaNova-Light.woff2") format('woff2'),
+    url("../fonts/ProximaNova-Light.woff") format('woff')
+  ), $weight: 300,
+  $style: normal
+);
+@include font-face(
+  'Proxima Nova',
+  $font-files: (
+    url("../fonts/ProximaNova-Regular.woff2") format('woff2'),
+    url("../fonts/ProximaNova-Regular.woff") format('woff')
+  ), $weight: 400,
+  $style: normal
+);
+
+
+// General rules
+@include global-reset;
+
+$susy: (
+  gutter-position: inside,
+  columns: 12,
+  gutters: .2308,
+  global-box-sizing: border-box
+);
+
+body {
+  background-color: #fff;
+  font: 400 14px/1.2 $regular-font;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+h1,
+h2,
+h4,
+nav,
+input[type="submit"] {
+  font-family: $headings-font;
+  text-transform: uppercase;
+}
+h1,
+h2,
+h4,
+input[type="submit"] {
+  font-weight: 700;
+}
+input[type="submit"] {
+  cursor: pointer;
+}
+img {
+  width: 100%;
+}
+/*.collapse.in {
+    display: block;
+}
+.collapse {
+    display: none;
+}
+.collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-duration: .35s;
+    -o-transition-duration: .35s;
+    transition-duration: .35s;
+    -webkit-transition-property: height,visibility;
+    -o-transition-property: height,visibility;
+    transition-property: height,visibility;
+}
+*/
+
+// Header + Main
+.header-main-wrap {
+  padding: 1.44vw 0 4.69vw 0;
+  background: url("../images/1.png") 100% 50% / cover;
+  color: #fff;
+}
+header {
+  @include display-flex;
+  @include flex-flow(row wrap);
+  @include align-items(center);
+  max-width: $desktop-min-width;
+  margin: auto;
+}
+.logo {
+  display: block;
+  width: span(2);
+  min-width: 150px;
+  margin-right: span(1) + gutter();
+}
+nav {
+  li {
+    display: inline-block;
+    padding-right: 3vw;
+    text-align: center;
+    a {
+      border-bottom: 1px solid transparent;
+      line-height: 2.143;
+      &:hover {
+        border-bottom: 1px solid $orange2;
+      }
+    }
+  }
+}
+.contacts {
+  @include display-flex;
+  @include align-items(center);
+  margin-left: auto;
+  a {
+    @include display-flex;
+    @include align-items(center);
+    &:not(:first-of-type) {
+      margin-left: 2vw;
+    }
+  }
+}
+.icon {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  margin-right: 0.94vw;
+}
+.icon.tel {
+  background: url(../images/phone-call.svg);
+}
+.icon.email {
+  background: url(../images/envelope.svg);
+}
+
+main {
+  width: $desktop-min-width;
+  margin: 10.31vw auto 0;
+}
+h1 {
+  font-size: 4.29rem; // 60px
+}
+h3 {
+  font-size: 1.5rem;
+  padding-right: 17vw;
+}
+.main__consult {
+  position: relative;
+  width: 27.81vw;
+  min-width: 400px;
+  margin-top: 5.94vw;
+  padding: 2.44vw 1.88vw 2.13vw;
+  box-shadow: 3px 10px 50px #000;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparentize($frame, 0.45);
+    mix-blend-mode: multiply;
+  }
+  h4 {
+    color: $orange;
+    margin-bottom: 2.13vw;
+    text-align: center;
+  }
+  form {
+    position: relative;
+    @include display-flex;
+    @include flex-direction(column);
+    @include align-items(center);
+  }
+  input {
+    display: block;
+    width: 46%;
+    color: inherit;
+  }
+  input[type="text"] {
+    margin-bottom: calc(2vw - 5px);
+    padding: 5px;
+    border: none;
+    background: transparent;
+    font: inherit;
+    font-weight: 300;
+    text-align: center;
+  }
+  input[type="submit"] {
+    padding: 1vw;
+    border: 1px solid $orange3;
+    background: transparent;
+    &:hover {
+      background: $orange3;
+    }
+  }
+}
+
+// Advantages section
+.advantages {
+  padding: 9vw 0 11.44vw 0;
+  &__wrap {
+    @include display-flex;
+    @include flex-flow(row wrap);
+    @include justify-content(space-around);
+    max-width: $desktop-min-width;
+    margin: auto;
+  }
+  .img-wrap {
+    width: 62px;
+    height: 62px;
+    margin: auto;
+  }
+  p {
+    color: $grey1;
+  }
+}
+.advantage {
+  width: calc(25% - 2 * 1.88vw);
+  min-width: 222px;
+  margin: 0 1.88vw;
+  text-align: center;
+  cursor: default;
+  &:hover .img-wrap,
+  &:hover h4 {
+    @include transform(translateY(-5px));
+  }
+  &:hover .line {
+    width: 7.88vw;
+  }
+  &:hover p {
+    @include transform(translateY(5px));
+  }
+  .img-wrap {
+    margin-bottom: 1.56vw;
+    @include transition(transform 0.3s);
+  }
+  h4 {
+    text-align: center;
+    white-space: nowrap;
+    @include transition(transform 0.3s);
+  }
+  .line {
+    width: 1.94vw;
+    height: 1px;
+    margin: 1.2vw auto 1.06vw;
+    background: $orange;
+    @include transition(width 0.3s);
+  }
+  p {
+    font-weight: 300;
+    @include transition(transform 0.3s);
+  }
+}
+
+// What section
+.what {
+  position: relative;
+  height: 425px;
+  background-image: url(../images/home-1.png);
+  color: #fff;
+  &__wrap {
+    position: absolute;
+    top: -3vw;
+    bottom: -3vw;
+    left: 50%;
+    width: 89%;
+    max-width: 980px;
+    padding: 6.125vw 4.875vw 5.9375vw 5.9375vw;
+    background-color: $frame;
+    @include transform(translateX(-50%));
+  }
+  h2 {
+    color: $orange;
+    font-weight: 400;
+    font-size: 1.71rem;
+  }
+  .img-wrap {
+    float: right;
+    width: 34.08%;
+    max-width: 334px;
+  }
+}
+// Accordion
+.ui-icon.iconOpen {
+  background: url('../images/arrow-up.png') no-repeat;
+  background-size: 18px;
+  width: 18px;
+  height: 13px;
+}
+.ui-icon.iconClosed {
+  background: url('../images/arrow-down.png') no-repeat;
+  background-size: 18px;
+  width: 18px;
+  height: 13px;
+}
+.ui-accordion .ui-accordion-header {
+  margin: 2px 0 0 0;
+  padding: 0;
+  outline: 0;
+}

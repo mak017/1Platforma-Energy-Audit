@@ -1,0 +1,500 @@
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../fonts/GothamProBold.woff2") format("woff2"), url("../fonts/GothamProBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../fonts/GothamProMedium.woff2") format("woff2"), url("../fonts/GothamProMedium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Light.woff2") format("woff2"), url("../fonts/ProximaNova-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* line 5, F:/Programs/WIN_Scout-App_2.12.12/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, F:/Programs/WIN_Scout-App_2.12.12/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, F:/Programs/WIN_Scout-App_2.12.12/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, F:/Programs/WIN_Scout-App_2.12.12/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, F:/Programs/WIN_Scout-App_2.12.12/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, F:/Programs/WIN_Scout-App_2.12.12/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+
+/* line 103, F:/Programs/WIN_Scout-App_2.12.12/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, F:/Programs/WIN_Scout-App_2.12.12/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, F:/Programs/WIN_Scout-App_2.12.12/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 71, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+body {
+  background-color: #fff;
+  font: 400 14px/1.2 "Proxima Nova", sans-serif;
+}
+
+/* line 75, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 80, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+h1,
+h2,
+h4,
+nav,
+input[type="submit"] {
+  font-family: "Gotham Pro", sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 88, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+h1,
+h2,
+h4,
+input[type="submit"] {
+  font-weight: 700;
+}
+
+/* line 94, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/* line 97, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+img {
+  width: 100%;
+}
+
+/*.collapse.in {
+    display: block;
+}
+.collapse {
+    display: none;
+}
+.collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-duration: .35s;
+    -o-transition-duration: .35s;
+    transition-duration: .35s;
+    -webkit-transition-property: height,visibility;
+    -o-transition-property: height,visibility;
+    transition-property: height,visibility;
+}
+*/
+/* line 123, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.header-main-wrap {
+  padding: 1.44vw 0 4.69vw 0;
+  background: url("../images/1.png") 100% 50%/cover;
+  color: #fff;
+}
+
+/* line 128, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+header {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-items: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* line 135, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.logo {
+  display: block;
+  width: 16.66667%;
+  min-width: 150px;
+  margin-right: 9.11467%;
+}
+
+/* line 142, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+nav li {
+  display: inline-block;
+  padding-right: 3vw;
+  text-align: center;
+}
+
+/* line 146, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+nav li a {
+  border-bottom: 1px solid transparent;
+  line-height: 2.143;
+}
+
+/* line 149, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+nav li a:hover {
+  border-bottom: 1px solid #ffc016;
+}
+
+/* line 155, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.contacts {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-left: auto;
+}
+
+/* line 159, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.contacts a {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* line 162, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.contacts a:not(:first-of-type) {
+  margin-left: 2vw;
+}
+
+/* line 167, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.icon {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  margin-right: 0.94vw;
+}
+
+/* line 173, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.icon.tel {
+  background: url(../images/phone-call.svg);
+}
+
+/* line 176, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.icon.email {
+  background: url(../images/envelope.svg);
+}
+
+/* line 180, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+main {
+  width: 1100px;
+  margin: 10.31vw auto 0;
+}
+
+/* line 184, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+h1 {
+  font-size: 4.29rem;
+}
+
+/* line 187, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+h3 {
+  font-size: 1.5rem;
+  padding-right: 17vw;
+}
+
+/* line 191, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.main__consult {
+  position: relative;
+  width: 27.81vw;
+  min-width: 400px;
+  margin-top: 5.94vw;
+  padding: 2.44vw 1.88vw 2.13vw;
+  box-shadow: 3px 10px 50px #000;
+}
+
+/* line 198, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.main__consult::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(43, 47, 64, 0.55);
+  mix-blend-mode: multiply;
+}
+
+/* line 208, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.main__consult h4 {
+  color: #f8c957;
+  margin-bottom: 2.13vw;
+  text-align: center;
+}
+
+/* line 213, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.main__consult form {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* line 219, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.main__consult input {
+  display: block;
+  width: 46%;
+  color: inherit;
+}
+
+/* line 224, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.main__consult input[type="text"] {
+  margin-bottom: calc(2vw - 5px);
+  padding: 5px;
+  border: none;
+  background: transparent;
+  font: inherit;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* line 233, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.main__consult input[type="submit"] {
+  padding: 1vw;
+  border: 1px solid #f3c12f;
+  background: transparent;
+}
+
+/* line 237, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.main__consult input[type="submit"]:hover {
+  background: #f3c12f;
+}
+
+/* line 244, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.advantages {
+  padding: 9vw 0 11.44vw 0;
+}
+
+/* line 246, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.advantages__wrap {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* line 253, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.advantages .img-wrap {
+  width: 62px;
+  height: 62px;
+  margin: auto;
+}
+
+/* line 258, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.advantages p {
+  color: #8b8b8b;
+}
+
+/* line 262, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.advantage {
+  width: calc(25% - 2 * 1.88vw);
+  min-width: 222px;
+  margin: 0 1.88vw;
+  text-align: center;
+  cursor: default;
+}
+
+/* line 268, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.advantage:hover .img-wrap,
+.advantage:hover h4 {
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+/* line 272, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.advantage:hover .line {
+  width: 7.88vw;
+}
+
+/* line 275, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.advantage:hover p {
+  -webkit-transform: translateY(5px);
+  -moz-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  -o-transform: translateY(5px);
+  transform: translateY(5px);
+}
+
+/* line 278, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.advantage .img-wrap {
+  margin-bottom: 1.56vw;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+/* line 282, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.advantage h4 {
+  text-align: center;
+  white-space: nowrap;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+/* line 287, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.advantage .line {
+  width: 1.94vw;
+  height: 1px;
+  margin: 1.2vw auto 1.06vw;
+  background: #f8c957;
+  -webkit-transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  -o-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+/* line 294, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.advantage p {
+  font-weight: 300;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+/* line 301, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.what {
+  position: relative;
+  height: 425px;
+  background-image: url(../images/home-1.png);
+  color: #fff;
+}
+
+/* line 306, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.what__wrap {
+  position: absolute;
+  top: -3vw;
+  bottom: -3vw;
+  left: 50%;
+  width: 89%;
+  max-width: 980px;
+  padding: 6.125vw 4.875vw 5.9375vw 5.9375vw;
+  background-color: #2b2f40;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 317, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.what h2 {
+  color: #f8c957;
+  font-weight: 400;
+  font-size: 1.71rem;
+}
+
+/* line 322, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.what .img-wrap {
+  float: right;
+  width: 34.08%;
+  max-width: 334px;
+}
+
+/* line 329, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.ui-icon.iconOpen {
+  background: url("../images/arrow-up.png") no-repeat;
+  background-size: 18px;
+  width: 18px;
+  height: 13px;
+}
+
+/* line 335, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.ui-icon.iconClosed {
+  background: url("../images/arrow-down.png") no-repeat;
+  background-size: 18px;
+  width: 18px;
+  height: 13px;
+}
+
+/* line 341, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+.ui-accordion .ui-accordion-header {
+  margin: 2px 0 0 0;
+  padding: 0;
+  outline: 0;
+}
+
+/*# sourceMappingURL=../css/style.map */
