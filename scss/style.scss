@@ -8,12 +8,42 @@ $regular-font: 'Proxima Nova', sans-serif;
 $orange: #f8c957;
 $orange2: #ffc016;
 $orange3: #f3c12f;
+$orange4: #f8c23f;
 $grey1: #8b8b8b;
-$frame: #2b2f40;
+$grey2: #bababa;
+$dark: #2b2f40;
+$dark-blue: #35495f;
 
 $desktop-min-width: 1100px;
 
 // Mixins
+
+
+/// Viewport sized typography with minimum and maximum values
+/// @author Eduardo Boucas (@eduardoboucas)
+@mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
+  $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+  $dimension: if(unit($responsive) == 'vh', 'height', 'width');
+  $min-breakpoint: $min / $responsive-unitless * 100;
+  
+  @media (max-#{$dimension}: #{$min-breakpoint}) {
+    font-size: $min;
+  }
+  
+  @if $max {
+    $max-breakpoint: $max / $responsive-unitless * 100;
+    
+    @media (min-#{$dimension}: #{$max-breakpoint}) {
+      font-size: $max;
+    }
+  }
+  
+  @if $fallback {
+    font-size: $fallback;
+  }
+  
+  font-size: $responsive;
+}
 
 // Fonts
 @include font-face(
@@ -29,7 +59,7 @@ $desktop-min-width: 1100px;
   $font-files: (
     url("../fonts/GothamProMedium.woff2") format('woff2'),
     url("../fonts/GothamProMedium.woff") format('woff')
-  ), $weight: 400,
+  ), $weight: 500,
   $style: normal
 );
 @include font-face(
@@ -61,6 +91,13 @@ $desktop-min-width: 1100px;
 // General rules
 @include global-reset;
 
+* {
+  box-sizing: border-box;
+}
+input, textarea {
+  font: inherit;
+}
+
 $susy: (
   gutter-position: inside,
   columns: 12,
@@ -69,8 +106,10 @@ $susy: (
 );
 
 body {
+  overflow-x: hidden;
   background-color: #fff;
-  font: 400 14px/1.2 $regular-font;
+  font: 400 14px/1.2 $regular-font; // 14px
+  @include responsive-font(1.27vw, 13px, 14px);
 }
 a {
   color: inherit;
@@ -97,27 +136,29 @@ input[type="submit"] {
 img {
   width: 100%;
 }
-/*.collapse.in {
-    display: block;
+.underline {
+  position: relative;
+  width: 4px;
+  height: 4px;
+  margin: 1vw auto 3.125vw;
+  border-radius: 50%;
+  background-color: #f8c957;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 65px;
+    height: 1px;
+    background-color: #f8c957;
+  }
+  &::before {
+    left: 425%;
+  }
+  &::after {
+    right: 425%;
+  }
 }
-.collapse {
-    display: none;
-}
-.collapsing {
-    position: relative;
-    height: 0;
-    overflow: hidden;
-    -webkit-transition-timing-function: ease;
-    -o-transition-timing-function: ease;
-    transition-timing-function: ease;
-    -webkit-transition-duration: .35s;
-    -o-transition-duration: .35s;
-    transition-duration: .35s;
-    -webkit-transition-property: height,visibility;
-    -o-transition-property: height,visibility;
-    transition-property: height,visibility;
-}
-*/
 
 // Header + Main
 .header-main-wrap {
@@ -182,16 +223,16 @@ main {
   margin: 10.31vw auto 0;
 }
 h1 {
-  font-size: 4.29rem; // 60px
+  @include responsive-font(5.45vw, 40px, 100px); // 60px
 }
 h3 {
-  font-size: 1.5rem;
+  @include responsive-font(2.18vw, 16px, 50px); // 24px
   padding-right: 17vw;
 }
 .main__consult {
   position: relative;
   width: 27.81vw;
-  min-width: 400px;
+  min-width: 410px;
   margin-top: 5.94vw;
   padding: 2.44vw 1.88vw 2.13vw;
   box-shadow: 3px 10px 50px #000;
@@ -202,7 +243,7 @@ h3 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: transparentize($frame, 0.45);
+    background-color: transparentize($dark, 0.45);
     mix-blend-mode: multiply;
   }
   h4 {
@@ -303,7 +344,20 @@ h3 {
   height: 425px;
   background-image: url(../images/home-1.png);
   color: #fff;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 89%;
+    max-width: 980px;
+    border-radius: 8%;
+    @include transform(translateX(-50%));
+  }
   &__wrap {
+    @include display-flex;
+    @include justify-content(space-between);
     position: absolute;
     top: -3vw;
     bottom: -3vw;
@@ -311,35 +365,372 @@ h3 {
     width: 89%;
     max-width: 980px;
     padding: 6.125vw 4.875vw 5.9375vw 5.9375vw;
-    background-color: $frame;
+    box-shadow: 0 23px 90px 10px rgba(0, 0, 0, 0.25);
+    background-color: $dark;
     @include transform(translateX(-50%));
   }
   h2 {
+    margin-bottom: 2.06vw;
     color: $orange;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1.71rem;
   }
   .img-wrap {
-    float: right;
-    width: 34.08%;
+    width: 40.2%;
     max-width: 334px;
   }
 }
-// Accordion
-.ui-icon.iconOpen {
-  background: url('../images/arrow-up.png') no-repeat;
-  background-size: 18px;
-  width: 18px;
-  height: 13px;
-}
-.ui-icon.iconClosed {
-  background: url('../images/arrow-down.png') no-repeat;
-  background-size: 18px;
-  width: 18px;
-  height: 13px;
-}
+// Accordion specific styles
 .ui-accordion .ui-accordion-header {
-  margin: 2px 0 0 0;
+  margin: 0;
   padding: 0;
+  padding-left: calc(18px + 1.06vw);
+  font-size: 18px;
+  line-height: 1.1;
   outline: 0;
+}
+.ui-icon {
+  position: absolute;
+  top: 0.8vw;
+  left: 0;
+  &.iconOpen {
+    background: url('../images/arrow-up.png') no-repeat;
+    background-size: 18px;
+    width: 18px;
+    height: 13px;
+  }
+  &.iconClosed {
+    background: url('../images/arrow-down.png') no-repeat;
+    background-size: 18px;
+    width: 18px;
+    height: 13px;
+  }
+}
+.ui-accordion .ui-accordion-content {
+  position: relative;
+  left: -0.125vw;
+  padding: 1.125vw 1.5vw 0 0;
+  color: $grey2;
+  font-weight: 300;
+}
+.accordion-container {
+  width: 56.5%;
+}
+.accordion h3 {
+  margin-bottom: 2.06vw;
+  &:not(:first-of-type) {
+    margin-top: 2.43vw;
+  }
+}
+
+.how {
+  padding: 8.19vw 0 7.56vw;
+  background: #f5f5f5;
+  &__wrap {
+    max-width: 980px;
+    margin: auto;
+  }
+  h2 {
+    color: $dark-blue;
+    font-size: 22px;
+    text-align: center;
+  }
+  &__items {
+    @include display-flex;
+    @include flex-flow(row wrap);
+    @include justify-content(space-between);
+  }
+  &__item {
+    width: 35.71%;
+    max-width: 350px;
+    min-width: 320px;
+    margin: 0 auto 3.875vw;
+    text-align: center;
+    &__marker {
+      margin-bottom: 1.625vw;
+      color: $orange;
+      font: 700 100px/0.7 $headings-font;
+      img {
+        position: relative;
+        width: 47px;
+        height: 47px;
+        margin-left: -50px;
+      }
+    }
+    &:nth-of-type(1) img {
+      bottom: 3px;
+      left: 2px;
+    }
+    &:nth-of-type(2) img {
+      bottom: 1px;
+      left: -9px;
+    }
+    &:nth-of-type(3) img {
+      bottom: -9px;
+      left: -8px;
+    }
+    &:nth-of-type(4) img {
+      bottom: -1px;
+      left: -6px;
+    }
+    h4 {
+      margin-bottom: 2.125vw;
+      font-weight: 500;
+    }
+    p {
+      color: $grey1;
+      font-weight: 300;
+    }
+  }
+}
+
+// Stages section
+.stages {
+  padding-top: 5.69vw;
+  text-align: center;
+  &__wrap {
+    max-width: 1600px;
+  }
+  h2 {
+    color: $dark-blue;
+    font-size: 22px;
+  }
+  &__items {
+    display: flex;
+    counter-reset: stages;
+  }
+  &__item {
+    @include display-flex;
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(center);
+    position: relative;
+    width: 33.3333333333%;
+    height: 394px;
+    &:nth-of-type(1) {
+      background: url("../images/fz-261-zdaniya-i-sooruzheniya.png") 50% 50%/cover;
+    }
+    &:nth-of-type(2) {
+      background: url("../images/1482764794.png") 50% 50%/cover;
+    }
+    &:nth-of-type(3) {
+      background: url("../images/practice_03-L43-1024x768.png") 50% 50%/cover;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 5;
+      background-color: transparentize($dark, 0.09);
+      opacity: 0;
+      @include transition(opacity 0.3s);
+    }
+    &__outer {
+      @include display-flex;
+      @include flex-direction(column);
+      @include align-items(center);
+      @include justify-content(space-around);
+      position: relative;
+      z-index: 10;
+      background-color: rgba(255, 255, 255, 0.73);
+      width: 100%;
+      min-height: 120px;
+      @include transition(background-color 0.3s);
+    }
+    &__marker {
+      @include display-flex;
+      @include align-items(center);
+      @include justify-content(center);
+      position: relative;
+      top: 7px;
+      width: 44px;
+      height: 44px;
+      background-color: $orange4;
+      color: #fff;
+      font: 700 24px/1 $headings-font;
+      @include transform(rotate(45deg));
+      &::before {
+        content: counter(stages);
+        counter-increment: stages;
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        @include transform(rotate(-45deg));
+      }
+    }
+    h4 {
+      color: $dark;
+      font-weight: 500;
+      line-height: 1.71;
+      @include transition(color 0.3s);
+    }
+    p {
+      margin-bottom: 1.56vw;
+    }
+    &__inner {
+      display: none;
+      position: relative;
+      z-index: 10;
+      margin-top: 0.31vw;
+      padding: 0 0.75vw; // 0 3.75vw
+      opacity: 0;
+      color: #fff;
+      font-weight: 300;
+      line-height: 1.29;
+      @include transition(opacity 0.3s);
+    }
+    &:hover {
+      @include justify-content(flex-start);
+    }
+    &:hover::before {
+      opacity: 1;
+    }
+    &:hover &__outer {
+      background-color: transparent;
+    }
+    &:hover h4 {
+      color: $orange;
+    }
+    &:hover &__inner {
+      display: block;
+      opacity: 1;
+    }
+  }
+}
+
+// Recommendations section
+.recommendations {
+  padding: 5.69vw 39.06vw 8.625vw 15.125vw;
+  background: url("../images/recommendations-bg.png") 80% 50%/cover;
+  &__wrap {
+    max-width: 730px;
+  }
+  h2 {
+    margin-bottom: 2.625vw;
+    @include responsive-font(2.2vw, 20px, 35px);
+    font-weight: 500;
+    line-height: 0.8;
+  }
+  img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.94vw;
+  }
+  h4 {
+    margin-bottom: 1.625vw;
+    font-weight: 500;
+    line-height: 1.29;
+  }
+  p {
+    color: $grey1;
+    font-weight: 300;
+    line-height: 1.71;
+  }
+}
+.recommendation:first-of-type {
+  margin-bottom: 2.06vw;
+}
+
+// Questions section
+.questions {
+  padding: 4.25vw;
+  &__wrap {
+    max-width: 922px;
+    margin: auto;
+  }
+  h2 {
+    margin-bottom: 7.19vw;
+    @include responsive-font(2.2vw, 20px, 35px);
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+  }
+  form {
+    @include display-flex;
+    @include flex-flow(row wrap);
+    @include justify-content(space-between);
+    position: relative;
+    max-width: 922px; // 730
+    margin: auto;
+    padding: 0 5.94vw 3.69vw;
+    box-shadow: 0px 14px 46px 0 rgba(0, 0, 0, 0.1);
+  }
+  &__input {
+    width: 47.9452%;
+    margin-bottom: 2.81vw;
+    input {
+      @extend %input;
+    }
+  }
+  textarea {
+    @extend %input;
+    margin-bottom: 3.44vw;
+  }
+  &__submit {
+    width: 100%;
+    input {
+      display: block;
+      width: 13.75vw;
+      height: 2.94vw;
+      min-height: 47px;
+      margin: auto;
+      background-color: transparent;
+      border: solid 1px $orange;
+      letter-spacing: 1.4px;
+      line-height: 2.14;
+      @include transition(background-color 0.3s);
+      &:hover {
+        background-color: $orange;
+      }
+    }
+  }
+  .img-wrap {
+    position: absolute;
+    top: 3.875vw;
+    right: -12vw;
+    width: 8.25vw;
+    max-width: 132px;
+    height: 9vw;
+    max-height: 144px;
+  }
+}
+%input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #000;
+  outline: 0;
+  font-weight: 300;
+  line-height: 2.14;
+}
+
+
+// Recalls section
+.recalls {
+  background: url("../images/img2.png") 50% 50%/cover rgba(0, 0, 0, 0.3);
+  background-blend-mode: multiply;
+  padding: 5vw 0 3.81vw 0;
+  text-align: center;
+  &__wrap {
+    max-width: $desktop-min-width;
+    margin: auto;
+  }
+  h2 {
+    @include responsive-font(2vw, 17px, 28px, 22px);
+    line-height: 1.09;
+    color: #fff;
+  }
+  &__container {
+    max-width: 730px;
+    min-height: 261px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.88);
+  }
+  .img-wrap {
+    width: 42px;
+    height: 42px;
+  }
 }

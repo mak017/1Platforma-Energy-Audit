@@ -4,26 +4,16 @@
     <title>Энергоаудит</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.structure.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <link href="css/style.css" rel="stylesheet">
     <script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
     <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
-    <script>
-      $( function() {
-        var icons = {
-          header: "iconClosed",
-          activeHeader: "iconOpen"
-        };
-        $( "#accordion" ).accordion({
-          icons: icons
-        });
-      } );
-    </script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="js/main.js"></script>
   </head>
   <body>
     <div class="header-main-wrap">
@@ -91,175 +81,204 @@
     </div>
     <section class="what">
       <div class="what__wrap">
+        <div class="accordion-container">
+          <h2>Что такое энергоаудит</h2> 
+          <div class="accordion" id="accordion">
+            <h3>Энергоаудит определяет эффективность работы систем вашего дома, находит «слабые места».</h3>
+            <div>
+              <p>Мы проводим всесторонние оценки использования энергии, чтобы помочь вам узнать, где ваш дом, неоправданно теряет энергию, что поможет вам сэкономить больше денег на функционирование вашего дома и снизить счета за энергоносители. </p>
+            </div>
+            <h3>Энегроаудит дает перечень и приоритетность выполнения ремонтных работ</h3>
+            <div>
+              <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+            </div>
+            <h3>Энергоаудит – это полный энергетический профиль квартиры или дома.</h3>
+            <div>
+              <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+              <ul>
+                <li>List item one</li>
+                <li>List item two</li>
+                <li>List item three</li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <div class="img-wrap">
           <img src="images/img.png" alt="">
-        </div>
-        <h2>Что такое энергоаудит</h2>
-
-        <div id="accordion">
-          <h3>Section 1</h3>
-          <div>
-            <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
-          </div>
-          <h3>Section 2</h3>
-          <div>
-            <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
-          </div>
-          <h3>Section 3</h3>
-          <div>
-            <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
-            <ul>
-              <li>List item one</li>
-              <li>List item two</li>
-              <li>List item three</li>
-            </ul>
-          </div>
-          <h3>Section 4</h3>
-          <div>
-            <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-          </div>
-        </div>
-
-        <!--<div class="panel-group" id="accordion">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                        Пункт Группы Свертывания #1
-                      </a>
-                    </h4>
-            </div>
-            <div id="collapseOne" class="panel-collapse collapse in">
-              <div class="panel-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                        Пункт Группы Свертывания #2
-                      </a>
-                    </h4>
-            </div>
-            <div id="collapseTwo" class="panel-collapse collapse">
-              <div class="panel-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                        Пункт Группы Свертывания #3
-                      </a>
-                    </h4>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse">
-              <div class="panel-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </div>
-            </div>
-          </div>
-        </div>-->
+        </div>  
       </div>
     </section>
     <section class="how">
       <div class="how__wrap">
-        <h2></h2>
-        <div class="how__item">
-          <div class="how__item__marker">
-            <img src="" alt="">
+        <h2>Как проходит энергоаудит</h2>
+        <div class="underline"></div>
+        <div class="how__items">
+          <div class="how__item">
+            <div class="how__item__marker">
+              1
+              <img src="images/zoom-tool.svg" alt="">
+            </div>
+            <h4>Сбор и анализ информации</h4>
+            <p>В указанное время на объект выезжают наши специалисты. Они собирают и анализируют всю необходимую информацию.</p>
           </div>
-          <h4></h4>
-          <p></p>
-        </div>
-        <div class="how__item">
-          <div class="how__item__marker">
-            <img src="" alt="">
+          <div class="how__item">
+            <div class="how__item__marker">
+              2
+              <img src="images/voltmeter.svg" alt="">
+            </div>
+            <h4>Инструментальный аудит</h4>
+            <p>Специалисты проводят инструментальное обследование. На основании полученных данных становится возможным определить, сколько при данных условиях возможно экономить.</p>
           </div>
-          <h4></h4>
-          <p></p>
-        </div>
-        <div class="how__item">
-          <div class="how__item__marker">
-            <img src="" alt="">
+          <div class="how__item">
+            <div class="how__item__marker">
+              3
+              <img src="images/battery.svg" alt="">
+            </div>
+            <h4>Разработка плана энергосберегающих мероприятий</h4>
+            <p>Специалистами разрабатывается комплекс мероприятий, направленный на сокращение потребления энергоресурсов, который включает в себя расчет стоимости и сроков окупаемости предложенных мероприятий.</p>
           </div>
-          <h4></h4>
-          <p></p>
-        </div>
-        <div class="how__item">
-          <div class="how__item__marker">
-            <img src="" alt="">
+          <div class="how__item">
+            <div class="how__item__marker">
+              4
+              <img src="images/light-bulb(1).svg" alt="">
+            </div>
+            <h4>Результат</h4>
+            <p>По результатам энергоудита разрабатывается план мероприятий по максимальной оптимизации потребления энергоресурсов и возможных вариантов энергосбережения.</p>
           </div>
-          <h4></h4>
-          <p></p>
         </div>
       </div>
     </section>
     <section class="stages">
       <div class="stages__wrap">
-        <div class="stages__item">
-          <div class="stages__item__outer">
-            <div class="stages__item__marker">
+        <h2>Этапы проведения энергоаудита</h2>
+        <div class="underline"></div>
+        <div class="stages__items">
+          <div class="stages__item">
+            <div class="stages__item__outer">
+              <div class="stages__item__marker"></div>
+              <h4>Подготовка объекта</h4>
             </div>
-            <h4></h4>
-          </div>
-          <p class="stages__item__inner"></p>
-        </div>
-        <div class="stages__item">
-          <div class="stages__item__outer">
-            <div class="stages__item__marker">
+            <div class="stages__item__inner">
+              <p>
+                Подготовьте здание к обследованию:
+                <ul>
+                  <li>- За несколько дней до обследования прогрейте помещение до температуры на 15° выше уличной и поддерживайте ее;</li>
+                  <li>- Освободите подоконник от посторонних предметов;</li>
+                  <li>- Разшторьте окна;</li>
+                  <li>- По возможности уберите от наружных стен мебель и предметы интерьера;</li>
+                  <li>- Отметьте для себя самые проблемные места в помещении;</li>
+                </ul>
+              </p>
+              <p>Все это облегчит  труд и существенно сократит время обследования, а также позволит получить
+                наиболее полную картину состояния объекта.</p>
             </div>
-            <h4></h4>
           </div>
-          <p class="stages__item__inner"></p>
-        </div>
-        <div class="stages__item">
-          <div class="stages__item__outer">
-            <div class="stages__item__marker">
+          <div class="stages__item">
+            <div class="stages__item__outer">
+              <div class="stages__item__marker"></div>
+              <h4>Проведение энергоаудита</h4>
             </div>
-            <h4></h4>
+            <div class="stages__item__inner">
+              <p>В оговоренное время по указанному адресу на объект выезжает специалист.</p>
+              <p>Расчет производится перед началом работ.</p>
+              <p>Стандартное обследование занимает от 1 до 2 часов. Все что нужно от Вас во время обследования – это сообщить ему суть проблемы, объяснить, какие места у вас вызывают сомнения и всего лишь сопровождать специалиста.</p>
+            </div>
           </div>
-          <p class="stages__item__inner"></p>
+          <div class="stages__item">
+            <div class="stages__item__outer">
+              <div class="stages__item__marker"></div>
+              <h4>Составление и передача отчета</h4>
+            </div>
+            <div class="stages__item__inner">
+              <p>После проведения обследования, полученные результаты требуют систематизации и обработки. В течение нескольких дней составляется отчет о проведенном тепловизионном обследовании, который включает в себя снимки проблемных мест, термограммы, температурную карту, графики температурных полей, а также комментарии и выводы специалиста.</p>
+              <p>Отчет передается заказчику в формате .pdf по средству электронной почты, на CD-диске или flash-носителе, по желанию клиента.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section class="recommendations">
       <div class="recommendations__wrap">
-        <h2></h2>
+        <h2>Внедряем рекомендации!</h2>
         <div class="recommendation">
-          <img src="" alt="">
-          <h4></h4>
-          <p></p>
+          <img src="images/rich.svg" alt="">
+          <h4>Подберем материалы по хорошей цене</h4>
+          <p>Мы понимаем, что самостоятельно выбрать материалы или оборудование, из всего широкого ассортимента, представленного на нашем рынке достаточно сложно. Наши специалисты проконсультируют, подберут и доставят все необходимое для внедрения рекомендаций энергоаудита прямо к вам домой.</p>
         </div>
         <div class="recommendation">
-          <img src="" alt="">
-          <h4></h4>
-          <p></p>
+          <img src="images/engineer.svg" alt="" />
+          <h4>Подберем надежного мастера или бригаду</h4>
+          <p>У нас есть широкая база подрядчиков и мастеров, проверенных временем, которые качественно установят необходимое оборудование либо проведут нужные вам ремонтные работы.</p>
         </div>
       </div>
     </section>
     <section class="questions">
       <div class="questions__wrap">
-        <h2></h2>
-        <form>
-          <input type="text"/>
-          <input type="text"/>
-          <input type="text"/>
-          <input type="text"/>
-          <textarea rows="" cols=""></textarea>
-          <input type="submit" name="" value="Отправить">
+        <h2>Остались вопросы?</h2>
+        <form name="questions">
+          <div class="questions__input">
+            <input type="text" name="name" placeholder="Имя" required />
+          </div>
+          <div class="questions__input">
+            <input type="text" name="surname" placeholder="Фамилия" />
+          </div>
+          <div class="questions__input">
+            <input type="tel" name="tel" placeholder="Телефон" />
+          </div>
+          <div class="questions__input">
+            <input type="email" name="email" placeholder="E-mail" required />
+          </div>
+          <textarea rows="4" cols="" name="question" placeholder="Задайте вопрос" required></textarea>
+          <div class="questions__submit">
+            <input type="submit" name="" value="Отправить" />
+          </div>
+          <div class="img-wrap">
+            <img src="images/abstract.png" alt="" />
+          </div>
         </form>
       </div>
     </section>
     <section class="recalls">
       <div class="recalls__wrap">
-        <h2></h2>
+        <h2>Отзывы наших клиентов</h2>
+        <div class="underline"></div>
         <div class="recalls__container carousel">
-          
+          <div class="recall carousel__item">
+            <p>Приветствую! Хочу сказать спасибо за проделанную работу и за качество! Специалисты провели энергоаудит моего дома, в оговоренные сроки, качественно и быстро. После чего я получила отчёт, с техническими рекомендациями, что нужно изменить для улучшения качества и уюта моего дома.</p>
+            <div class="recall__author">
+              <div class="img-wrap">
+                <img src="images/tumblr_inline_o81us8Mk631tiffji_1280.png" alt="Author's photo" />
+              </div>
+              <div class="recall__author__wrap">
+                <span class="recall__author__name">John Snow </span>
+                <span class="recall__author__position">Lorem ipsum dolor sit amet, </span>
+              </div>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <p>2222Приветствую! Хочу сказать спасибо за проделанную работу и за качество! Специалисты провели энергоаудит моего дома, в оговоренные сроки, качественно и быстро. После чего я получила отчёт, с техническими рекомендациями, что нужно изменить для улучшения качества и уюта моего дома.</p>
+            <div class="recall__author">
+              <div class="img-wrap">
+                <img src="images/tumblr_inline_o81us8Mk631tiffji_1280.png" alt="Author's photo" />
+              </div>
+              <div class="recall__author__wrap">
+                <span class="recall__author__name">John Snow </span>
+                <span class="recall__author__position">Lorem ipsum dolor sit amet, </span>
+              </div>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <p>3333Приветствую! Хочу сказать спасибо за проделанную работу и за качество! Специалисты провели энергоаудит моего дома, в оговоренные сроки, качественно и быстро. После чего я получила отчёт, с техническими рекомендациями, что нужно изменить для улучшения качества и уюта моего дома.</p>
+            <div class="recall__author">
+              <div class="img-wrap">
+                <img src="images/tumblr_inline_o81us8Mk631tiffji_1280.png" alt="Author's photo" />
+              </div>
+              <div class="recall__author__wrap">
+                <span class="recall__author__name">John Snow </span>
+                <span class="recall__author__position">Lorem ipsum dolor sit amet, </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
