@@ -11,8 +11,10 @@ $orange3: #f3c12f;
 $orange4: #f8c23f;
 $grey1: #8b8b8b;
 $grey2: #bababa;
+$grey3: #c9c9c9;
 $dark: #2b2f40;
 $dark-blue: #35495f;
+$dark-blue2: #29394a;
 
 $desktop-min-width: 1100px;
 
@@ -232,7 +234,7 @@ h3 {
 .main__consult {
   position: relative;
   width: 27.81vw;
-  min-width: 410px;
+  min-width: 415px;
   margin-top: 5.94vw;
   padding: 2.44vw 1.88vw 2.13vw;
   box-shadow: 3px 10px 50px #000;
@@ -643,7 +645,7 @@ h3 {
     margin: auto;
   }
   h2 {
-    margin-bottom: 7.19vw;
+    margin-bottom: 3.375vw;
     @include responsive-font(2.2vw, 20px, 35px);
     font-weight: 500;
     line-height: 1;
@@ -656,7 +658,7 @@ h3 {
     position: relative;
     max-width: 922px; // 730
     margin: auto;
-    padding: 0 5.94vw 3.69vw;
+    padding: 3.25vw 5.94vw 3.69vw;
     box-shadow: 0px 14px 46px 0 rgba(0, 0, 0, 0.1);
   }
   &__input {
@@ -724,13 +726,243 @@ h3 {
     color: #fff;
   }
   &__container {
+    position: relative;
     max-width: 730px;
     min-height: 261px;
     margin: auto;
+    padding: 4vw 4vw 2.5vw;
     background-color: rgba(255, 255, 255, 0.88);
+    line-height: 1.71;
+    *:focus {
+      outline: 0;
+    }
+  }
+  p {
+    position: relative;
+    margin-bottom: 1.81vw;
+    padding-left: 3.56vw;
+    font-weight: 300;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 1px;
+      left: 0;
+      width: 31px;
+      height: 25px;
+      background-image: url("../images/left-quote.png");
+    }
+  }
+  .recall__author {
+    @include display-flex;
+    @include justify-content(center);
+    @include align-items(center);
+    &__name {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    &__position {
+      color: $grey1;
+      font-weight: 300;
+    }
   }
   .img-wrap {
+    display: inline-block;
     width: 42px;
     height: 42px;
+    margin-right: 0.8125vw;
+    img {
+      border-radius: 50%;
+    }
   }
+}
+/// Slick carousel
+.slick-arrow {
+  position: absolute;
+  width: 16px;
+  height: 31px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 31px;
+  &:hover,
+  &:focus,
+  &:active {
+    color: #f2b809;
+  }
+  &::before {
+    content: "";
+  }
+}
+.slick-prev {
+  left: -10.75vw;
+}
+.slick-next {
+  right: -10.75vw;
+}
+.slick-dots {
+  bottom: -2.19vw;
+  width: calc(100% - 8vw);
+  li button:before {
+    opacity: 1;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 9px;
+  }
+  li.slick-active button::before {
+    color: #eca606;
+  }
+}
+
+
+// Prices section
+.prices {
+  padding: 7.19vw 1vw 9.94vw;
+  text-align: center;
+  h2 {
+    @include responsive-font(1.375vw, 18px, 25px, 22px);
+    font-weight: 700;
+    line-height: 1.09;
+    color: $dark-blue2;
+  }
+  .underline {
+    margin-bottom: 1.06vw;
+  }
+  p {
+    margin-bottom: 8.625vw;
+    @include responsive-font(1.125vw, 16px, 20px, 18px);
+    font-weight: 300;
+    line-height: 1.33;
+    color: $dark-blue2;
+  }
+  &__container {
+    @include display-flex;
+    @include flex-flow(row wrap);
+    @include justify-content(center);
+  }
+  &__item {
+    @include display-flex;
+    @include flex-direction(column);
+    @include align-items(center);
+    width: 350px;
+    min-height: 357px;
+    margin: 0 2.06vw;
+    padding-bottom: 3.44vw;
+    box-shadow: 0px 14px 18px 0 rgba(84, 84, 84, 0.07);
+    &:hover,
+    &:focus,
+    &:active {
+      box-shadow: 0px 34px 73px 0 rgba(84, 84, 84, 0.15);
+    }
+    &:nth-of-type(1) .prices__marker::before {
+      width: 46px;
+      height: 46px;
+      background-image: url("../images/apartment.svg");
+    }
+    &:nth-of-type(2) .prices__marker::before {
+      width: 51px;
+      height: 40px;
+      background-image: url("../images/house.svg");
+    }
+    &:hover .square-scale__point.active,
+    &:focus .square-scale__point.active,
+    &:active .square-scale__point.active {
+      color: #000;
+    }
+    &:hover .square-scale__point.active .square-scale__point__diamond,
+    &:focus .square-scale__point.active .square-scale__point__diamond,
+    &:active .square-scale__point.active .square-scale__point__diamond {
+      width: 13px;
+      height: 13px;
+    }
+  }
+  &__marker {
+    @include display-flex;
+    @include align-items(center);
+    @include justify-content(center);
+    position: relative;
+    top: -37.125px;
+    width: 74.25px;
+    height: 74.25px;
+    background-color: $orange;
+    @include transform(rotate(45deg));
+    &::before {
+      content: "";
+      display: block;
+      position: relative;
+      top: 0;
+      left: 0;
+      @include transform(rotate(-45deg));
+    }
+  }
+  h4 {
+    margin-bottom: 3.75vw;
+    font-weight: 500;
+    line-height: 2.14;
+  }
+  .price {
+    margin-top: auto;
+    color: #010101;
+    &__num {
+      @include responsive-font(1.5vw, 20px, 28px, 24px);
+      font-weight: 700;
+      line-height: 1.25;
+    }
+    &__currency {
+      @include responsive-font(1.125vw, 16px, 20px, 18px);
+      font-weight: 300;
+      line-height: 1.67;
+    }
+  }
+}
+/// Square-scale
+.square-scale {
+  position: relative;
+  width: 220px;
+  height: 2px;
+  margin-bottom: 3.375vw;
+  background-color: $grey3;
+  &__point {
+    @include display-flex;
+    @include justify-content(center);
+    position: absolute;
+    top: -5px;
+    width: 10.5px;
+    height: 10.5px;
+    color: #aeaeae;
+    font-weight: 300;
+    line-height: 2.14;
+    &:nth-of-type(1) {
+      left: 0;
+    }
+    &:nth-of-type(2) {
+      left: 69px;
+    }
+    &:nth-of-type(3) {
+      right: 69px;
+    }
+    &:nth-of-type(4) {
+      right: 0;
+    }
+    &__diamond {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 10.5px;
+      height: 10.5px;
+      background-color: $grey3;
+      cursor: pointer;
+      @include transform(rotate(45deg));
+    }
+    &__label {
+      padding-top: 1vw;
+      white-space: nowrap;
+    }
+    &.active &__diamond {
+      background-color: $orange;
+    }
+  }
+}
+
+
+// Consult section
+.consult {
+  min-height: 203px;
+  background-color: $orange4;
 }

@@ -33,7 +33,7 @@
   font-style: normal;
 }
 
-/* line 5, F:/Programs/WIN_Scout-App_2.12.12/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+/* line 5, D:/Denis/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -55,61 +55,61 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, F:/Programs/WIN_Scout-App_2.12.12/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+/* line 22, D:/Denis/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, F:/Programs/WIN_Scout-App_2.12.12/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+/* line 24, D:/Denis/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, F:/Programs/WIN_Scout-App_2.12.12/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+/* line 26, D:/Denis/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, F:/Programs/WIN_Scout-App_2.12.12/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+/* line 28, D:/Denis/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, F:/Programs/WIN_Scout-App_2.12.12/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+/* line 30, D:/Denis/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
 
-/* line 103, F:/Programs/WIN_Scout-App_2.12.12/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+/* line 103, D:/Denis/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, F:/Programs/WIN_Scout-App_2.12.12/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+/* line 32, D:/Denis/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, F:/Programs/WIN_Scout-App_2.12.12/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+/* line 116, D:/Denis/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
-/* line 94, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 96, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 97, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 99, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 input, textarea {
   font: inherit;
 }
 
-/* line 108, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 110, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 body {
   overflow-x: hidden;
   background-color: #fff;
@@ -118,27 +118,27 @@ body {
 }
 
 @media (max-width: 1023.62205px) {
-  /* line 108, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+  /* line 110, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
   body {
     font-size: 13px;
   }
 }
 
 @media (min-width: 1102.3622px) {
-  /* line 108, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+  /* line 110, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
   body {
     font-size: 14px;
   }
 }
 
-/* line 114, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 116, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 a {
   color: inherit;
   text-decoration: none;
   cursor: pointer;
 }
 
-/* line 119, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 121, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 h1,
 h2,
 h4,
@@ -148,7 +148,7 @@ input[type="submit"] {
   text-transform: uppercase;
 }
 
-/* line 127, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 129, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 h1,
 h2,
 h4,
@@ -156,17 +156,17 @@ input[type="submit"] {
   font-weight: 700;
 }
 
-/* line 133, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 135, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 input[type="submit"] {
   cursor: pointer;
 }
 
-/* line 136, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 138, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 img {
   width: 100%;
 }
 
-/* line 139, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 141, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .underline {
   position: relative;
   width: 4px;
@@ -176,7 +176,7 @@ img {
   background-color: #f8c957;
 }
 
-/* line 146, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 148, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .underline::before, .underline::after {
   content: '';
   position: absolute;
@@ -186,24 +186,24 @@ img {
   background-color: #f8c957;
 }
 
-/* line 155, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 157, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .underline::before {
   left: 425%;
 }
 
-/* line 158, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 160, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .underline::after {
   right: 425%;
 }
 
-/* line 164, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 166, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .header-main-wrap {
   padding: 1.44vw 0 4.69vw 0;
   background: url("../images/1.png") 100% 50%/cover;
   color: #fff;
 }
 
-/* line 169, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 171, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 header {
   display: -webkit-flex;
   display: flex;
@@ -215,7 +215,7 @@ header {
   margin: auto;
 }
 
-/* line 176, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 178, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .logo {
   display: block;
   width: 16.66667%;
@@ -223,25 +223,25 @@ header {
   margin-right: 9.11467%;
 }
 
-/* line 183, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 185, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 nav li {
   display: inline-block;
   padding-right: 3vw;
   text-align: center;
 }
 
-/* line 187, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 189, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 nav li a {
   border-bottom: 1px solid transparent;
   line-height: 2.143;
 }
 
-/* line 190, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 192, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 nav li a:hover {
   border-bottom: 1px solid #ffc016;
 }
 
-/* line 196, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 198, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .contacts {
   display: -webkit-flex;
   display: flex;
@@ -250,7 +250,7 @@ nav li a:hover {
   margin-left: auto;
 }
 
-/* line 200, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 202, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .contacts a {
   display: -webkit-flex;
   display: flex;
@@ -258,12 +258,12 @@ nav li a:hover {
   align-items: center;
 }
 
-/* line 203, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 205, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .contacts a:not(:first-of-type) {
   margin-left: 2vw;
 }
 
-/* line 208, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 210, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .icon {
   display: inline-block;
   width: 23px;
@@ -271,72 +271,72 @@ nav li a:hover {
   margin-right: 0.94vw;
 }
 
-/* line 214, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 216, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .icon.tel {
   background: url(../images/phone-call.svg);
 }
 
-/* line 217, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 219, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .icon.email {
   background: url(../images/envelope.svg);
 }
 
-/* line 221, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 223, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 main {
   width: 1100px;
   margin: 10.31vw auto 0;
 }
 
-/* line 225, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 227, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 h1 {
   font-size: 5.45vw;
 }
 
 @media (max-width: 733.94495px) {
-  /* line 225, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+  /* line 227, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
   h1 {
     font-size: 40px;
   }
 }
 
 @media (min-width: 1834.86239px) {
-  /* line 225, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+  /* line 227, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
   h1 {
     font-size: 100px;
   }
 }
 
-/* line 228, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 230, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 h3 {
   font-size: 2.18vw;
   padding-right: 17vw;
 }
 
 @media (max-width: 733.94495px) {
-  /* line 228, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+  /* line 230, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
   h3 {
     font-size: 16px;
   }
 }
 
 @media (min-width: 2293.57798px) {
-  /* line 228, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+  /* line 230, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
   h3 {
     font-size: 50px;
   }
 }
 
-/* line 232, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 234, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .main__consult {
   position: relative;
   width: 27.81vw;
-  min-width: 410px;
+  min-width: 415px;
   margin-top: 5.94vw;
   padding: 2.44vw 1.88vw 2.13vw;
   box-shadow: 3px 10px 50px #000;
 }
 
-/* line 239, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 241, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .main__consult::before {
   content: '';
   position: absolute;
@@ -348,14 +348,14 @@ h3 {
   mix-blend-mode: multiply;
 }
 
-/* line 249, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 251, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .main__consult h4 {
   color: #f8c957;
   margin-bottom: 2.13vw;
   text-align: center;
 }
 
-/* line 254, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 256, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .main__consult form {
   position: relative;
   display: -webkit-flex;
@@ -366,14 +366,14 @@ h3 {
   align-items: center;
 }
 
-/* line 260, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 262, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .main__consult input {
   display: block;
   width: 46%;
   color: inherit;
 }
 
-/* line 265, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 267, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .main__consult input[type="text"] {
   margin-bottom: calc(2vw - 5px);
   padding: 5px;
@@ -384,24 +384,24 @@ h3 {
   text-align: center;
 }
 
-/* line 274, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 276, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .main__consult input[type="submit"] {
   padding: 1vw;
   border: 1px solid #f3c12f;
   background: transparent;
 }
 
-/* line 278, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 280, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .main__consult input[type="submit"]:hover {
   background: #f3c12f;
 }
 
-/* line 285, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 287, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .advantages {
   padding: 9vw 0 11.44vw 0;
 }
 
-/* line 287, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 289, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .advantages__wrap {
   display: -webkit-flex;
   display: flex;
@@ -413,19 +413,19 @@ h3 {
   margin: auto;
 }
 
-/* line 294, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 296, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .advantages .img-wrap {
   width: 62px;
   height: 62px;
   margin: auto;
 }
 
-/* line 299, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 301, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .advantages p {
   color: #8b8b8b;
 }
 
-/* line 303, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 305, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .advantage {
   width: calc(25% - 2 * 1.88vw);
   min-width: 222px;
@@ -434,7 +434,7 @@ h3 {
   cursor: default;
 }
 
-/* line 309, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 311, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .advantage:hover .img-wrap,
 .advantage:hover h4 {
   -webkit-transform: translateY(-5px);
@@ -444,12 +444,12 @@ h3 {
   transform: translateY(-5px);
 }
 
-/* line 313, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 315, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .advantage:hover .line {
   width: 7.88vw;
 }
 
-/* line 316, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 318, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .advantage:hover p {
   -webkit-transform: translateY(5px);
   -moz-transform: translateY(5px);
@@ -458,7 +458,7 @@ h3 {
   transform: translateY(5px);
 }
 
-/* line 319, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 321, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .advantage .img-wrap {
   margin-bottom: 1.56vw;
   -webkit-transition: -webkit-transform 0.3s;
@@ -467,7 +467,7 @@ h3 {
   transition: transform 0.3s;
 }
 
-/* line 323, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 325, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .advantage h4 {
   text-align: center;
   white-space: nowrap;
@@ -477,7 +477,7 @@ h3 {
   transition: transform 0.3s;
 }
 
-/* line 328, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 330, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .advantage .line {
   width: 1.94vw;
   height: 1px;
@@ -489,7 +489,7 @@ h3 {
   transition: width 0.3s;
 }
 
-/* line 335, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 337, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .advantage p {
   font-weight: 300;
   -webkit-transition: -webkit-transform 0.3s;
@@ -498,7 +498,7 @@ h3 {
   transition: transform 0.3s;
 }
 
-/* line 342, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 344, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .what {
   position: relative;
   height: 425px;
@@ -506,7 +506,7 @@ h3 {
   color: #fff;
 }
 
-/* line 347, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 349, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .what::before {
   content: '';
   position: absolute;
@@ -523,7 +523,7 @@ h3 {
   transform: translateX(-50%);
 }
 
-/* line 358, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 360, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .what__wrap {
   display: -webkit-flex;
   display: flex;
@@ -545,7 +545,7 @@ h3 {
   transform: translateX(-50%);
 }
 
-/* line 372, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 374, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .what h2 {
   margin-bottom: 2.06vw;
   color: #f8c957;
@@ -553,13 +553,13 @@ h3 {
   font-size: 1.71rem;
 }
 
-/* line 378, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 380, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .what .img-wrap {
   width: 40.2%;
   max-width: 334px;
 }
 
-/* line 384, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 386, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .ui-accordion .ui-accordion-header {
   margin: 0;
   padding: 0;
@@ -569,14 +569,14 @@ h3 {
   outline: 0;
 }
 
-/* line 392, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 394, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .ui-icon {
   position: absolute;
   top: 0.8vw;
   left: 0;
 }
 
-/* line 396, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 398, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .ui-icon.iconOpen {
   background: url("../images/arrow-up.png") no-repeat;
   background-size: 18px;
@@ -584,7 +584,7 @@ h3 {
   height: 13px;
 }
 
-/* line 402, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 404, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .ui-icon.iconClosed {
   background: url("../images/arrow-down.png") no-repeat;
   background-size: 18px;
@@ -592,7 +592,7 @@ h3 {
   height: 13px;
 }
 
-/* line 409, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 411, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .ui-accordion .ui-accordion-content {
   position: relative;
   left: -0.125vw;
@@ -601,41 +601,41 @@ h3 {
   font-weight: 300;
 }
 
-/* line 416, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 418, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .accordion-container {
   width: 56.5%;
 }
 
-/* line 419, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 421, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .accordion h3 {
   margin-bottom: 2.06vw;
 }
 
-/* line 421, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 423, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .accordion h3:not(:first-of-type) {
   margin-top: 2.43vw;
 }
 
-/* line 426, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 428, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .how {
   padding: 8.19vw 0 7.56vw;
   background: #f5f5f5;
 }
 
-/* line 429, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 431, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .how__wrap {
   max-width: 980px;
   margin: auto;
 }
 
-/* line 433, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 435, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .how h2 {
   color: #35495f;
   font-size: 22px;
   text-align: center;
 }
 
-/* line 438, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 440, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .how__items {
   display: -webkit-flex;
   display: flex;
@@ -645,7 +645,7 @@ h3 {
   justify-content: space-between;
 }
 
-/* line 443, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 445, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .how__item {
   width: 35.71%;
   max-width: 350px;
@@ -654,14 +654,14 @@ h3 {
   text-align: center;
 }
 
-/* line 449, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 451, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .how__item__marker {
   margin-bottom: 1.625vw;
   color: #f8c957;
   font: 700 100px/0.7 "Gotham Pro", sans-serif;
 }
 
-/* line 453, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 455, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .how__item__marker img {
   position: relative;
   width: 47px;
@@ -669,66 +669,66 @@ h3 {
   margin-left: -50px;
 }
 
-/* line 460, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 462, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .how__item:nth-of-type(1) img {
   bottom: 3px;
   left: 2px;
 }
 
-/* line 464, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 466, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .how__item:nth-of-type(2) img {
   bottom: 1px;
   left: -9px;
 }
 
-/* line 468, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 470, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .how__item:nth-of-type(3) img {
   bottom: -9px;
   left: -8px;
 }
 
-/* line 472, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 474, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .how__item:nth-of-type(4) img {
   bottom: -1px;
   left: -6px;
 }
 
-/* line 476, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 478, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .how__item h4 {
   margin-bottom: 2.125vw;
   font-weight: 500;
 }
 
-/* line 480, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 482, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .how__item p {
   color: #8b8b8b;
   font-weight: 300;
 }
 
-/* line 488, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 490, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .stages {
   padding-top: 5.69vw;
   text-align: center;
 }
 
-/* line 491, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 493, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .stages__wrap {
   max-width: 1600px;
 }
 
-/* line 494, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 496, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .stages h2 {
   color: #35495f;
   font-size: 22px;
 }
 
-/* line 498, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 500, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .stages__items {
   display: flex;
   counter-reset: stages;
 }
 
-/* line 502, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 504, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .stages__item {
   display: -webkit-flex;
   display: flex;
@@ -743,22 +743,22 @@ h3 {
   height: 394px;
 }
 
-/* line 510, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 512, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .stages__item:nth-of-type(1) {
   background: url("../images/fz-261-zdaniya-i-sooruzheniya.png") 50% 50%/cover;
 }
 
-/* line 513, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 515, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .stages__item:nth-of-type(2) {
   background: url("../images/1482764794.png") 50% 50%/cover;
 }
 
-/* line 516, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 518, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .stages__item:nth-of-type(3) {
   background: url("../images/practice_03-L43-1024x768.png") 50% 50%/cover;
 }
 
-/* line 519, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 521, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .stages__item::before {
   content: "";
   position: absolute;
@@ -775,7 +775,7 @@ h3 {
   transition: opacity 0.3s;
 }
 
-/* line 531, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 533, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .stages__item__outer {
   display: -webkit-flex;
   display: flex;
@@ -796,7 +796,7 @@ h3 {
   transition: background-color 0.3s;
 }
 
-/* line 543, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 545, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .stages__item__marker {
   display: -webkit-flex;
   display: flex;
@@ -818,7 +818,7 @@ h3 {
   transform: rotate(45deg);
 }
 
-/* line 555, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 557, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .stages__item__marker::before {
   content: counter(stages);
   counter-increment: stages;
@@ -833,7 +833,7 @@ h3 {
   transform: rotate(-45deg);
 }
 
-/* line 565, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 567, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .stages__item h4 {
   color: #2b2f40;
   font-weight: 500;
@@ -844,12 +844,12 @@ h3 {
   transition: color 0.3s;
 }
 
-/* line 571, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 573, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .stages__item p {
   margin-bottom: 1.56vw;
 }
 
-/* line 574, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 576, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .stages__item__inner {
   display: none;
   position: relative;
@@ -866,45 +866,45 @@ h3 {
   transition: opacity 0.3s;
 }
 
-/* line 586, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 588, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .stages__item:hover {
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 
-/* line 589, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 591, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .stages__item:hover::before {
   opacity: 1;
 }
 
-/* line 592, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 594, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .stages__item:hover .stages__item__outer {
   background-color: transparent;
 }
 
-/* line 595, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 597, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .stages__item:hover h4 {
   color: #f8c957;
 }
 
-/* line 598, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 600, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .stages__item:hover .stages__item__inner {
   display: block;
   opacity: 1;
 }
 
-/* line 606, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 608, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .recommendations {
   padding: 5.69vw 39.06vw 8.625vw 15.125vw;
   background: url("../images/recommendations-bg.png") 80% 50%/cover;
 }
 
-/* line 609, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 611, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .recommendations__wrap {
   max-width: 730px;
 }
 
-/* line 612, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 614, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .recommendations h2 {
   margin-bottom: 2.625vw;
   font-size: 2.2vw;
@@ -913,59 +913,59 @@ h3 {
 }
 
 @media (max-width: 909.09091px) {
-  /* line 612, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+  /* line 614, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
   .recommendations h2 {
     font-size: 20px;
   }
 }
 
 @media (min-width: 1590.90909px) {
-  /* line 612, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+  /* line 614, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
   .recommendations h2 {
     font-size: 35px;
   }
 }
 
-/* line 618, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 620, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .recommendations img {
   width: 60px;
   height: 60px;
   margin-bottom: 0.94vw;
 }
 
-/* line 623, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 625, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .recommendations h4 {
   margin-bottom: 1.625vw;
   font-weight: 500;
   line-height: 1.29;
 }
 
-/* line 628, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 630, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .recommendations p {
   color: #8b8b8b;
   font-weight: 300;
   line-height: 1.71;
 }
 
-/* line 634, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 636, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .recommendation:first-of-type {
   margin-bottom: 2.06vw;
 }
 
-/* line 639, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 641, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .questions {
   padding: 4.25vw;
 }
 
-/* line 641, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 643, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .questions__wrap {
   max-width: 922px;
   margin: auto;
 }
 
-/* line 645, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 647, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .questions h2 {
-  margin-bottom: 7.19vw;
+  margin-bottom: 3.375vw;
   font-size: 2.2vw;
   font-weight: 500;
   line-height: 1;
@@ -973,20 +973,20 @@ h3 {
 }
 
 @media (max-width: 909.09091px) {
-  /* line 645, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+  /* line 647, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
   .questions h2 {
     font-size: 20px;
   }
 }
 
 @media (min-width: 1590.90909px) {
-  /* line 645, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+  /* line 647, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
   .questions h2 {
     font-size: 35px;
   }
 }
 
-/* line 652, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 654, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .questions form {
   display: -webkit-flex;
   display: flex;
@@ -997,27 +997,27 @@ h3 {
   position: relative;
   max-width: 922px;
   margin: auto;
-  padding: 0 5.94vw 3.69vw;
+  padding: 3.25vw 5.94vw 3.69vw;
   box-shadow: 0px 14px 46px 0 rgba(0, 0, 0, 0.1);
 }
 
-/* line 662, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 664, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .questions__input {
   width: 47.9452%;
   margin-bottom: 2.81vw;
 }
 
-/* line 669, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 671, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .questions textarea {
   margin-bottom: 3.44vw;
 }
 
-/* line 673, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 675, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .questions__submit {
   width: 100%;
 }
 
-/* line 675, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 677, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .questions__submit input {
   display: block;
   width: 13.75vw;
@@ -1034,12 +1034,12 @@ h3 {
   transition: background-color 0.3s;
 }
 
-/* line 686, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 688, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .questions__submit input:hover {
   background-color: #f8c957;
 }
 
-/* line 691, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 693, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .questions .img-wrap {
   position: absolute;
   top: 3.875vw;
@@ -1050,7 +1050,7 @@ h3 {
   max-height: 144px;
 }
 
-/* line 701, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 703, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .questions__input input, .questions textarea {
   width: 100%;
   border: 0;
@@ -1060,7 +1060,7 @@ h3 {
   line-height: 2.14;
 }
 
-/* line 712, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 714, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .recalls {
   background: url("../images/img2.png") 50% 50%/cover rgba(0, 0, 0, 0.3);
   background-blend-mode: multiply;
@@ -1068,13 +1068,13 @@ h3 {
   text-align: center;
 }
 
-/* line 717, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 719, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .recalls__wrap {
   max-width: 1100px;
   margin: auto;
 }
 
-/* line 721, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 723, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .recalls h2 {
   font-size: 22px;
   font-size: 2vw;
@@ -1083,31 +1083,419 @@ h3 {
 }
 
 @media (max-width: 850px) {
-  /* line 721, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+  /* line 723, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
   .recalls h2 {
     font-size: 17px;
   }
 }
 
 @media (min-width: 1400px) {
-  /* line 721, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+  /* line 723, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
   .recalls h2 {
     font-size: 28px;
   }
 }
 
-/* line 726, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 728, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .recalls__container {
+  position: relative;
   max-width: 730px;
   min-height: 261px;
   margin: auto;
+  padding: 4vw 4vw 2.5vw;
   background-color: rgba(255, 255, 255, 0.88);
+  line-height: 1.71;
 }
 
-/* line 732, C:/Users/mak/Documents/WEB-Dev/1Platforma-energy-audit/scss/style.scss */
+/* line 736, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.recalls__container *:focus {
+  outline: 0;
+}
+
+/* line 740, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.recalls p {
+  position: relative;
+  margin-bottom: 1.81vw;
+  padding-left: 3.56vw;
+  font-weight: 300;
+}
+
+/* line 745, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.recalls p::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 31px;
+  height: 25px;
+  background-image: url("../images/left-quote.png");
+}
+
+/* line 755, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.recalls .recall__author {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* line 759, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.recalls .recall__author__name {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* line 763, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.recalls .recall__author__position {
+  color: #8b8b8b;
+  font-weight: 300;
+}
+
+/* line 768, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
 .recalls .img-wrap {
+  display: inline-block;
   width: 42px;
   height: 42px;
+  margin-right: 0.8125vw;
+}
+
+/* line 773, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.recalls .img-wrap img {
+  border-radius: 50%;
+}
+
+/* line 779, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.slick-arrow {
+  position: absolute;
+  width: 16px;
+  height: 31px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 31px;
+}
+
+/* line 785, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.slick-arrow:hover, .slick-arrow:focus, .slick-arrow:active {
+  color: #f2b809;
+}
+
+/* line 790, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.slick-arrow::before {
+  content: "";
+}
+
+/* line 794, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.slick-prev {
+  left: -10.75vw;
+}
+
+/* line 797, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.slick-next {
+  right: -10.75vw;
+}
+
+/* line 800, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.slick-dots {
+  bottom: -2.19vw;
+  width: calc(100% - 8vw);
+}
+
+/* line 803, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.slick-dots li button:before {
+  opacity: 1;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 9px;
+}
+
+/* line 808, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.slick-dots li.slick-active button::before {
+  color: #eca606;
+}
+
+/* line 815, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.prices {
+  padding: 7.19vw 1vw 9.94vw;
+  text-align: center;
+}
+
+/* line 818, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.prices h2 {
+  font-size: 22px;
+  font-size: 1.375vw;
+  font-weight: 700;
+  line-height: 1.09;
+  color: #29394a;
+}
+
+@media (max-width: 1309.09091px) {
+  /* line 818, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+  .prices h2 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1818.18182px) {
+  /* line 818, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+  .prices h2 {
+    font-size: 25px;
+  }
+}
+
+/* line 824, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.prices .underline {
+  margin-bottom: 1.06vw;
+}
+
+/* line 827, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.prices p {
+  margin-bottom: 8.625vw;
+  font-size: 18px;
+  font-size: 1.125vw;
+  font-weight: 300;
+  line-height: 1.33;
+  color: #29394a;
+}
+
+@media (max-width: 1422.22222px) {
+  /* line 827, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+  .prices p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1777.77778px) {
+  /* line 827, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+  .prices p {
+    font-size: 20px;
+  }
+}
+
+/* line 834, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.prices__container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+/* line 839, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.prices__item {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 350px;
+  min-height: 357px;
+  margin: 0 2.06vw;
+  padding-bottom: 3.44vw;
+  box-shadow: 0px 14px 18px 0 rgba(84, 84, 84, 0.07);
+}
+
+/* line 848, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.prices__item:hover, .prices__item:focus, .prices__item:active {
+  box-shadow: 0px 34px 73px 0 rgba(84, 84, 84, 0.15);
+}
+
+/* line 853, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.prices__item:nth-of-type(1) .prices__marker::before {
+  width: 46px;
+  height: 46px;
+  background-image: url("../images/apartment.svg");
+}
+
+/* line 858, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.prices__item:nth-of-type(2) .prices__marker::before {
+  width: 51px;
+  height: 40px;
+  background-image: url("../images/house.svg");
+}
+
+/* line 863, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.prices__item:hover .square-scale__point.active,
+.prices__item:focus .square-scale__point.active,
+.prices__item:active .square-scale__point.active {
+  color: #000;
+}
+
+/* line 868, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.prices__item:hover .square-scale__point.active .square-scale__point__diamond,
+.prices__item:focus .square-scale__point.active .square-scale__point__diamond,
+.prices__item:active .square-scale__point.active .square-scale__point__diamond {
+  width: 13px;
+  height: 13px;
+}
+
+/* line 875, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.prices__marker {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+  top: -37.125px;
+  width: 74.25px;
+  height: 74.25px;
+  background-color: #f8c957;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 885, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.prices__marker::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* line 894, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.prices h4 {
+  margin-bottom: 3.75vw;
+  font-weight: 500;
+  line-height: 2.14;
+}
+
+/* line 899, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.prices .price {
+  margin-top: auto;
+  color: #010101;
+}
+
+/* line 902, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.prices .price__num {
+  font-size: 24px;
+  font-size: 1.5vw;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+@media (max-width: 1333.33333px) {
+  /* line 902, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+  .prices .price__num {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1866.66667px) {
+  /* line 902, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+  .prices .price__num {
+    font-size: 28px;
+  }
+}
+
+/* line 907, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.prices .price__currency {
+  font-size: 18px;
+  font-size: 1.125vw;
+  font-weight: 300;
+  line-height: 1.67;
+}
+
+@media (max-width: 1422.22222px) {
+  /* line 907, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+  .prices .price__currency {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1777.77778px) {
+  /* line 907, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+  .prices .price__currency {
+    font-size: 20px;
+  }
+}
+
+/* line 915, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.square-scale {
+  position: relative;
+  width: 220px;
+  height: 2px;
+  margin-bottom: 3.375vw;
+  background-color: #c9c9c9;
+}
+
+/* line 921, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.square-scale__point {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: absolute;
+  top: -5px;
+  width: 10.5px;
+  height: 10.5px;
+  color: #aeaeae;
+  font-weight: 300;
+  line-height: 2.14;
+}
+
+/* line 931, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.square-scale__point:nth-of-type(1) {
+  left: 0;
+}
+
+/* line 934, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.square-scale__point:nth-of-type(2) {
+  left: 69px;
+}
+
+/* line 937, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.square-scale__point:nth-of-type(3) {
+  right: 69px;
+}
+
+/* line 940, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.square-scale__point:nth-of-type(4) {
+  right: 0;
+}
+
+/* line 943, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.square-scale__point__diamond {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10.5px;
+  height: 10.5px;
+  background-color: #c9c9c9;
+  cursor: pointer;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 953, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.square-scale__point__label {
+  padding-top: 1vw;
+  white-space: nowrap;
+}
+
+/* line 957, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.square-scale__point.active .square-scale__point__diamond {
+  background-color: #f8c957;
+}
+
+/* line 965, D:/Denis/1Platforma-Energy-Audit/scss/style.scss */
+.consult {
+  min-height: 203px;
+  background-color: #f8c23f;
 }
 
 /*# sourceMappingURL=../css/style.map */

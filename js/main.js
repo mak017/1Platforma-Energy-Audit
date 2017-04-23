@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  // jQueryUI Accordion
   $( function() {
     var icons = {
       header: "iconClosed",
@@ -9,9 +10,20 @@ $(document).ready(function(){
       icons: icons
     });
   });
-  $(document).ready(function(){
-    $('.carousel').slick({
-      
-    });
+  
+  // Slick Carousel
+  $('.carousel').slick({
+    autoplay: true,
+    autoplaySpeed: 10000,
+    prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>',
+    cssEase: 'ease-in-out',
+    dots: true
+  });
+
+  // Square-scale
+  $('.square-scale__point__diamond').on('click', function() {
+    $('.square-scale__point').removeClass('active');
+    $(this).parent().addClass('active');
   });
 });
