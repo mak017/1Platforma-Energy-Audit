@@ -22,8 +22,13 @@ $(document).ready(function(){
   });
 
   // Square-scale
-  $('.square-scale__point__diamond').on('click', function() {
-    $('.square-scale__point').removeClass('active');
-    $(this).parent().addClass('active');
-  });
+  var squareScale = function(elem) {
+    $(elem + ' .square-scale__point__diamond').on('click', function() {
+      $(elem + ' .square-scale__point').removeClass('active');
+      $(this).parent().addClass('active');
+    });
+  }
+  
+  squareScale('.appartments');
+  squareScale('.house');
 });

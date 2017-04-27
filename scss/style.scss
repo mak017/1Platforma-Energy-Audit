@@ -1,10 +1,14 @@
 @import 'compass';
 @import 'susy';
+@import 'f:/Programs/WIN_Scout-App_2.12.12/Scout-App/bower_components/breakpoint-sass/stylesheets/breakpoint';
 
 // Varibles
+
+/// Fonts
 $headings-font: 'Gotham Pro', sans-serif;
 $regular-font: 'Proxima Nova', sans-serif;
 
+/// Colors
 $orange: #f8c957;
 $orange2: #ffc016;
 $orange3: #f3c12f;
@@ -16,10 +20,16 @@ $dark: #2b2f40;
 $dark-blue: #35495f;
 $dark-blue2: #29394a;
 
+/// Sizes
 $desktop-min-width: 1100px;
 
-// Mixins
+/// Breakpoints
+$x-large: 1300px;
+$large: max-width 950px;
+$medium: max-width 800px;
+$small: max-width 520px;
 
+// Mixins
 
 /// Viewport sized typography with minimum and maximum values
 /// @author Eduardo Boucas (@eduardoboucas)
@@ -111,7 +121,7 @@ body {
   overflow-x: hidden;
   background-color: #fff;
   font: 400 14px/1.2 $regular-font; // 14px
-  @include responsive-font(1.27vw, 13px, 14px);
+  @include responsive-font(1.27vw, 13px, 15px, 14px);
 }
 a {
   color: inherit;
@@ -132,7 +142,8 @@ h4,
 input[type="submit"] {
   font-weight: 700;
 }
-input[type="submit"] {
+input[type="submit"],
+button {
   cursor: pointer;
 }
 img {
@@ -164,9 +175,15 @@ img {
 
 // Header + Main
 .header-main-wrap {
-  padding: 1.44vw 0 4.69vw 0;
-  background: url("../images/1.png") 100% 50% / cover;
+  padding: 1.44vw 1vw 4.69vw;
+  background: url("../images/1-min.png") 100% 50% / cover;
   color: #fff;
+  @include breakpoint($medium) {
+    background-position-x: 90%;
+  }
+  @include breakpoint($small) {
+    background-position-x: 65%;
+  }
 }
 header {
   @include display-flex;
@@ -174,12 +191,22 @@ header {
   @include align-items(center);
   max-width: $desktop-min-width;
   margin: auto;
+  @include breakpoint($small) {
+    @include flex-direction(column);
+  }
 }
 .logo {
   display: block;
   width: span(2);
   min-width: 150px;
   margin-right: span(1) + gutter();
+  @include breakpoint($medium) {
+    margin-right: 2vw;
+  }
+  @include breakpoint($small) {
+    margin: auto;
+    margin-bottom: 2vw;
+  }
 }
 nav {
   li {
@@ -189,22 +216,50 @@ nav {
     a {
       border-bottom: 1px solid transparent;
       line-height: 2.143;
+      @include transition(border-bottom 0.3s);
       &:hover {
         border-bottom: 1px solid $orange2;
       }
     }
+  }
+  @include breakpoint($x-large) {
+    li {
+      padding-right: 49px;
+    }
+  }
+  @include breakpoint($medium) {
+    margin-left: auto;
+    li:last-of-type {
+      padding-right: 0;
+    }
+  }
+  @include breakpoint($small) {
+    margin: auto;
   }
 }
 .contacts {
   @include display-flex;
   @include align-items(center);
   margin-left: auto;
+  font-weight: 300;
+  line-height: 2.14;
   a {
     @include display-flex;
     @include align-items(center);
+    @include transition(color 0.3s);
     &:not(:first-of-type) {
       margin-left: 2vw;
     }
+    &:hover {
+      color: #dedede;
+    }
+  }
+  @include breakpoint($medium) {
+    margin-left: auto;
+  }
+  @include breakpoint($small) {
+    margin: auto;
+    margin-top: 2vw;
   }
 }
 .icon {
@@ -221,20 +276,23 @@ nav {
 }
 
 main {
-  width: $desktop-min-width;
+  max-width: $desktop-min-width;
   margin: 10.31vw auto 0;
 }
 h1 {
-  @include responsive-font(5.45vw, 40px, 100px); // 60px
+  @include responsive-font(5.45vw, 33px, 100px, 60px); // 60px
+  letter-spacing: 3px;
+  line-height: 0.5;
+  margin-bottom: 1.62vw;
 }
 h3 {
-  @include responsive-font(2.18vw, 16px, 50px); // 24px
+  @include responsive-font(2.18vw, 16px, 50px, 24px); // 24px
   padding-right: 17vw;
 }
 .main__consult {
   position: relative;
   width: 27.81vw;
-  min-width: 415px;
+  min-width: 495px;
   margin-top: 5.94vw;
   padding: 2.44vw 1.88vw 2.13vw;
   box-shadow: 3px 10px 50px #000;
@@ -251,17 +309,22 @@ h3 {
   h4 {
     color: $orange;
     margin-bottom: 2.13vw;
+    @include responsive-font(1.26vw, 13px, 20px, 14px);
+    letter-spacing: 0.7px;
+    line-height: 1.71;
     text-align: center;
   }
   form {
-    position: relative;
     @include display-flex;
     @include flex-direction(column);
     @include align-items(center);
+    position: relative;
   }
   input {
     display: block;
     width: 46%;
+    min-width: 200px;
+    min-height: 35px;
     color: inherit;
   }
   input[type="text"] {
@@ -276,10 +339,21 @@ h3 {
   input[type="submit"] {
     padding: 1vw;
     border: 1px solid $orange3;
-    background: transparent;
+    background-color: transparent;
+    @include transition(background-color 0.3s);
     &:hover {
-      background: $orange3;
+      background-color: $orange3;
     }
+  }
+  @include breakpoint($x-large) {
+    min-width: 615px;
+  }
+  @include breakpoint($medium) {
+    min-width: 400px;
+  }
+  @include breakpoint($small) {
+    width: 100%;
+    min-width: initial;
   }
 }
 
@@ -305,7 +379,6 @@ h3 {
 .advantage {
   width: calc(25% - 2 * 1.88vw);
   min-width: 222px;
-  margin: 0 1.88vw;
   text-align: center;
   cursor: default;
   &:hover .img-wrap,
@@ -338,13 +411,16 @@ h3 {
     font-weight: 300;
     @include transition(transform 0.3s);
   }
+  @include breakpoint($large) {
+    margin-bottom: 2vw;
+  }
 }
 
 // What section
 .what {
   position: relative;
   height: 425px;
-  background-image: url(../images/home-1.png);
+  background-image: url(../images/home-1-min.png);
   color: #fff;
   &::before {
     content: '';
@@ -359,6 +435,7 @@ h3 {
   }
   &__wrap {
     @include display-flex;
+    @include flex-flow(row wrap);
     @include justify-content(space-between);
     position: absolute;
     top: -3vw;
@@ -375,34 +452,66 @@ h3 {
     margin-bottom: 2.06vw;
     color: $orange;
     font-weight: 500;
-    font-size: 1.71rem;
+    @include responsive-font(1.5vw, 18px, 28px, 24px);
+    line-height: 0.75;
   }
   .img-wrap {
     width: 40.2%;
     max-width: 334px;
   }
+  @include breakpoint($x-large) {
+    &__wrap {
+      padding: 98px 78px 95px 98px;
+    }
+    h2 {
+      margin-bottom: 30px;
+    }
+  }
+  @include breakpoint($large) {
+    &__wrap {
+      width: 90%;
+    }
+  }
+  @include breakpoint($medium) {
+    height: auto;
+    &__wrap {
+      position: static;
+      width: 100%;
+      @include transform(translateX(0));
+    }
+    .img-wrap {
+      @include order(1);
+      width: 100%;
+      max-width: 260px;
+      margin: auto;
+      margin-bottom: 2vw;
+    }
+  }
 }
-// Accordion specific styles
+/// Accordion specific styles
 .ui-accordion .ui-accordion-header {
   margin: 0;
   padding: 0;
   padding-left: calc(18px + 1.06vw);
-  font-size: 18px;
+  @include responsive-font(1.125vw, 16px, 19px, 18px);
   line-height: 1.1;
   outline: 0;
+  @include breakpoint($x-large) {
+    padding-left: 38px;
+  }
 }
 .ui-icon {
   position: absolute;
-  top: 0.8vw;
+  top: 10px;
   left: 0;
   &.iconOpen {
-    background: url('../images/arrow-up.png') no-repeat;
+    background: url('../images/arrow-up-min.png') no-repeat;
     background-size: 18px;
     width: 18px;
     height: 13px;
   }
   &.iconClosed {
-    background: url('../images/arrow-down.png') no-repeat;
+    background: url('../images/arrow-down-min.png') no-repeat;
     background-size: 18px;
     width: 18px;
     height: 13px;
@@ -411,20 +520,35 @@ h3 {
 .ui-accordion .ui-accordion-content {
   position: relative;
   left: -0.125vw;
-  padding: 1.125vw 1.5vw 0 0;
+  padding: 0;
+  padding-top: 1.125vw;
   color: $grey2;
   font-weight: 300;
+  @include breakpoint($x-large) {
+    padding-top: 18px;
+  }
 }
 .accordion-container {
   width: 56.5%;
+  @include breakpoint($medium) {
+    @include order(2);
+    width: 100%;
+  }
 }
 .accordion h3 {
   margin-bottom: 2.06vw;
   &:not(:first-of-type) {
     margin-top: 2.43vw;
   }
+  @include breakpoint($x-large) {
+    margin-bottom: 33px;
+    &:not(:first-of-type) {
+      margin-top: 35px;
+    }
+  }
 }
 
+// How section
 .how {
   padding: 8.19vw 0 7.56vw;
   background: #f5f5f5;
@@ -434,7 +558,7 @@ h3 {
   }
   h2 {
     color: $dark-blue;
-    font-size: 22px;
+    @include responsive-font(2vw, 17px, 28px, 22px);
     text-align: center;
   }
   &__items {
@@ -445,7 +569,7 @@ h3 {
   &__item {
     width: 35.71%;
     max-width: 350px;
-    min-width: 320px;
+    min-width: 300px;
     margin: 0 auto 3.875vw;
     text-align: center;
     &__marker {
@@ -489,16 +613,19 @@ h3 {
 // Stages section
 .stages {
   padding-top: 5.69vw;
+  @include responsive-font(1.27vw, 13px, 14px, 14px);
   text-align: center;
   &__wrap {
     max-width: 1600px;
+    margin: auto;
   }
   h2 {
     color: $dark-blue;
-    font-size: 22px;
+    @include responsive-font(2vw, 17px, 28px, 22px);
   }
   &__items {
-    display: flex;
+    @include display-flex;
+    @include flex-flow(row wrap);
     counter-reset: stages;
   }
   &__item {
@@ -506,17 +633,17 @@ h3 {
     @include flex-direction(column);
     @include align-items(center);
     @include justify-content(center);
-    position: relative;
-    width: 33.3333333333%;
+    @include flex(1 0 300px);
+    position: relative;    
     height: 394px;
     &:nth-of-type(1) {
-      background: url("../images/fz-261-zdaniya-i-sooruzheniya.png") 50% 50%/cover;
+      background: url("../images/fz-261-zdaniya-i-sooruzheniya-min.png") 50% 50%/cover;
     }
     &:nth-of-type(2) {
-      background: url("../images/1482764794.png") 50% 50%/cover;
+      background: url("../images/1482764794-min.png") 50% 50%/cover;
     }
     &:nth-of-type(3) {
-      background: url("../images/practice_03-L43-1024x768.png") 50% 50%/cover;
+      background: url("../images/practice_03-L43-1024x768-min.png") 50% 50%/cover;
     }
     &::before {
       content: "";
@@ -602,18 +729,24 @@ h3 {
       opacity: 1;
     }
   }
+  @include breakpoint($medium) {
+    &__item {
+      min-height: 335px;
+      max-height: 394px;
+    }
+  }
 }
 
 // Recommendations section
 .recommendations {
   padding: 5.69vw 39.06vw 8.625vw 15.125vw;
-  background: url("../images/recommendations-bg.png") 80% 50%/cover;
+  background: url("../images/recommendations-bg-min.png") 80% 50%/cover;
   &__wrap {
     max-width: 730px;
   }
   h2 {
     margin-bottom: 2.625vw;
-    @include responsive-font(2.2vw, 20px, 35px);
+    @include responsive-font(2.2vw, 19px, 35px, 30px);
     font-weight: 500;
     line-height: 0.8;
   }
@@ -632,6 +765,22 @@ h3 {
     font-weight: 300;
     line-height: 1.71;
   }
+  @include breakpoint($x-large) {
+    &__wrap {
+      margin: auto;
+    }
+  }
+  @include breakpoint($large) {
+    padding-left: 1vw;
+    background-position: 70% 50%;
+  }
+  @include breakpoint($medium) {
+    background-position: 60% 50%;
+  }
+  @include breakpoint($small) {
+    padding-right: 1vw;
+    background-position: 40% 50%;
+  }
 }
 .recommendation:first-of-type {
   margin-bottom: 2.06vw;
@@ -646,7 +795,7 @@ h3 {
   }
   h2 {
     margin-bottom: 3.375vw;
-    @include responsive-font(2.2vw, 20px, 35px);
+    @include responsive-font(2.2vw, 20px, 35px, 30px);
     font-weight: 500;
     line-height: 1;
     text-align: center;
@@ -677,6 +826,7 @@ h3 {
     input {
       display: block;
       width: 13.75vw;
+      min-width: 110px;
       height: 2.94vw;
       min-height: 47px;
       margin: auto;
@@ -693,11 +843,25 @@ h3 {
   .img-wrap {
     position: absolute;
     top: 3.875vw;
-    right: -12vw;
+    right: -5vw;
     width: 8.25vw;
     max-width: 132px;
     height: 9vw;
     max-height: 144px;
+  }
+  @include breakpoint($x-large) {
+    .img-wrap {
+      right: -12vw;
+    }
+  }
+  @include breakpoint($small) {
+    padding: 4.25vw 0;
+    &__input {
+      @include flex(1 0 221px);
+    }
+    .img-wrap {
+      display: none;
+    }
   }
 }
 %input {
@@ -712,7 +876,7 @@ h3 {
 
 // Recalls section
 .recalls {
-  background: url("../images/img2.png") 50% 50%/cover rgba(0, 0, 0, 0.3);
+  background: url("../images/img2-min.png") 50% 50%/cover rgba(0, 0, 0, 0.3);
   background-blend-mode: multiply;
   padding: 5vw 0 3.81vw 0;
   text-align: center;
@@ -749,7 +913,7 @@ h3 {
       left: 0;
       width: 31px;
       height: 25px;
-      background-image: url("../images/left-quote.png");
+      background: url("../images/left-quote-min.png") 100%/cover no-repeat;
     }
   }
   .recall__author {
@@ -774,6 +938,15 @@ h3 {
       border-radius: 50%;
     }
   }
+  @include breakpoint($medium) {
+    p {
+      padding-left: 31px;
+      &::before {
+        width: 25px;
+        height: 21px;
+      }
+    }
+  }
 }
 /// Slick carousel
 .slick-arrow {
@@ -782,6 +955,7 @@ h3 {
   height: 31px;
   color: rgba(255, 255, 255, 0.5);
   font-size: 31px;
+  @include transition(color 0.3s);
   &:hover,
   &:focus,
   &:active {
@@ -793,12 +967,18 @@ h3 {
 }
 .slick-prev {
   left: -10.75vw;
+  @include breakpoint($large) {
+    left: -2.5vw;
+  }
 }
 .slick-next {
   right: -10.75vw;
+  @include breakpoint($large) {
+    right: -2.5vw;
+  }
 }
 .slick-dots {
-  bottom: -2.19vw;
+  bottom: calc(-2.19vw - 26px);
   width: calc(100% - 8vw);
   li button:before {
     opacity: 1;
@@ -840,11 +1020,12 @@ h3 {
     @include display-flex;
     @include flex-direction(column);
     @include align-items(center);
-    width: 350px;
+    width: 351px;
     min-height: 357px;
     margin: 0 2.06vw;
     padding-bottom: 3.44vw;
     box-shadow: 0px 14px 18px 0 rgba(84, 84, 84, 0.07);
+    @include transition(box-shadow 0.7s);
     &:hover,
     &:focus,
     &:active {
@@ -910,6 +1091,21 @@ h3 {
       line-height: 1.67;
     }
   }
+  @include breakpoint($medium) {
+    &__item {
+      min-height: initial;
+      &:first-of-type {
+        margin-top: 30px;
+        margin-bottom: 70px;
+      }
+    }
+    .price {
+      margin-top: 3vw;
+    }
+  }
+  @include breakpoint($small) {
+    
+  }
 }
 /// Square-scale
 .square-scale {
@@ -926,8 +1122,10 @@ h3 {
     width: 10.5px;
     height: 10.5px;
     color: #aeaeae;
+    @include responsive-font(1.27vw, 13px, 14px, 14px);
     font-weight: 300;
     line-height: 2.14;
+    @include transition(color 0.3s);
     &:nth-of-type(1) {
       left: 0;
     }
@@ -949,6 +1147,7 @@ h3 {
       background-color: $grey3;
       cursor: pointer;
       @include transform(rotate(45deg));
+      @include transition(width 0.3s, height 0.3s);
     }
     &__label {
       padding-top: 1vw;
@@ -958,11 +1157,136 @@ h3 {
       background-color: $orange;
     }
   }
+  @include breakpoint($medium) {
+    margin-bottom: 40px;
+    &__point__label {
+      padding-top: 10px;
+    }
+  }
 }
 
 
 // Consult section
 .consult {
+  @include display-flex;
   min-height: 203px;
   background-color: $orange4;
+  &__wrap {
+    @include display-flex;
+    @include flex-flow(row wrap);
+    @include justify-content(space-between);
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+    padding: 3.875vw 1.875vw 3.375vw;
+  }
+  &__description {
+    @include display-flex;
+    @include flex-direction(column);
+    @include justify-content(center);
+    width: 46.15%;
+  }
+  &__form-container {
+    @include display-flex;
+    @include align-items(center);
+    @include justify-content(flex-end);
+    width: 29.91%;
+  }
+  h2 {
+    margin-bottom: 1.375vw;
+    padding-left: 0.94vw;
+    border-left: 3px solid #fff;
+    @include responsive-font(1.5vw, 20px, 28px, 24px);
+    font-weight: 700;
+    line-height: 1.25;
+  }
+  p {
+    color: #fff;
+    @include responsive-font(1.125vw, 14px, 20px, 18px);
+    line-height: 1.33;
+  }
+  form {
+    @include display-flex;
+    @include flex-flow(row nowrap);
+  }
+  input[type="text"] {
+    width: 21.79vw;
+    min-width: 140px;
+    max-width: 255px;
+    height: 5.47vw;
+    min-height: 35px;
+    max-height: 64px;
+    margin-right: 1.875vw;
+    border: solid 1px #fff;
+    background-color: transparent;
+    color: #fff;
+    @include responsive-font(1vw, 14px, 18px, 16px);
+    line-height: 1.88;
+    text-align: center;
+  }
+  button {
+    display: block;
+    width: 5.56vw;
+    min-width: 35px;
+    max-width: 65px;
+    height: 5.56vw;
+    min-height: 35px;
+    max-height: 65px;
+    border: 0;
+    background-color: #fff;
+    i {
+      @include responsive-font(2.91vw, 30px, 38px, 34px);
+    }
+  }
+  @include breakpoint($small) {
+    &__wrap {
+      @include flex-direction(column);
+    }
+    &__description {
+      margin-bottom: 20px;
+    }
+    &__description,
+    &__form-container {
+      @include justify-content(center);
+      width: 100%;
+    }
+    input[type="text"] {
+      width: 80vw;
+    }
+  }
+}
+
+
+// Footer
+.footer {
+  @include display-flex;
+  min-height: 85px;
+  background-color: $dark;
+  color: #fff;
+  &__wrap {
+    @include display-flex;
+    @include flex-flow(row wrap);
+    @include justify-content(space-between);
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+    padding: 3.875vw 1.875vw 3.375vw;
+  }
+  &__logo {
+    width: 160px;
+    height: 30px;
+  }
+  i {
+    width: 28px;
+    height: 28px;
+  }
+  @include breakpoint($small) {
+    &__wrap {
+      @include flex-direction(column);
+      @include align-items(center);
+    }
+    &__logo {
+      margin-bottom: 20px;
+    }
+  }
 }
